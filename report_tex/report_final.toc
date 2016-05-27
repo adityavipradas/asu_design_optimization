@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {1}Design Problem Statement}{6}
+\contentsline {subsection}{\numberline {1.1}\textbf {Subsystem 1:} Structural Analysis}{6}
+\contentsline {subsection}{\numberline {1.2}\textbf {Subsystem 2:} Modal Analysis}{6}
+\contentsline {subsection}{\numberline {1.3}\textbf {Subsystem 3:} Thermal Analysis}{6}
+\contentsline {subsection}{\numberline {1.4}\textbf {Subsystem 4:} MATLAB Programming}{6}
+\contentsline {section}{\numberline {2}Nomenclature}{7}
+\contentsline {section}{\numberline {3}Mathematical Model}{8}
+\contentsline {subsection}{\numberline {3.1}Structural Analysis Model}{9}
+\contentsline {subsection}{\numberline {3.2}Modal Analysis Model}{10}
+\contentsline {subsection}{\numberline {3.3}Thermal Analysis Model}{10}
+\contentsline {section}{\numberline {4}Model Analysis}{10}
+\contentsline {subsection}{\numberline {4.1}FE Model}{11}
+\contentsline {subsection}{\numberline {4.2}Structural Analysis}{12}
+\contentsline {subsection}{\numberline {4.3}Modal Analysis}{14}
+\contentsline {subsection}{\numberline {4.4}Thermal Analysis}{14}
+\contentsline {subsection}{\numberline {4.5}Design of Experiments}{15}
+\contentsline {subsection}{\numberline {4.6}Response Surface}{16}
+\contentsline {section}{\numberline {5}Optimization Study}{18}
+\contentsline {subsection}{\numberline {5.1}Structural Analysis Optimization}{18}
+\contentsline {subsection}{\numberline {5.2}Modal Analysis Optimization}{18}
+\contentsline {subsection}{\numberline {5.3}Thermal Analysis Optimization}{20}
+\contentsline {section}{\numberline {6}Discussion of Results}{21}
+\contentsline {subsection}{\numberline {6.1}Structural Analysis Results}{21}
+\contentsline {subsection}{\numberline {6.2}Modal Analysis Results}{22}
+\contentsline {subsection}{\numberline {6.3}Thermal Analysis Results}{22}
+\contentsline {section}{\numberline {7}System Integration Study}{23}
+\contentsline {subsection}{\numberline {7.1}Combined Modal \& Thermal Optimization}{23}
+\contentsline {subsection}{\numberline {7.2}Combined Modal \& Structural Optimization}{25}
+\contentsline {subsection}{\numberline {7.3}Combined Structural, Modal \& Thermal Optimization}{27}
+\contentsline {section}{\numberline {8}References}{29}
+\contentsline {section}{\numberline {9}Appendix}{31}
+\contentsline {subsection}{\numberline {9.1}A}{31}
+\contentsline {subsection}{\numberline {9.2}B}{31}

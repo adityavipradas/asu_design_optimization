@@ -1,0 +1,73 @@
+
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and republish this document.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    
+    \begin{verbatim}
+%Name: Aditya Vipradas
+%ASURITE User ID: aviprada
+%ASU ID: 1209435588
+%Homework 1 Problem 1.a
+%clear screen
+clc;
+
+%Define the objective function
+fun1 = @(x)(x(1)-x(2))^2 + (x(2)+x(3)-2)^2 + (x(4)-1)^2 + (x(5)-1)^2;
+
+%Define the initial guess
+x0 = [2 2 2 2 2];
+
+%Define the equality constraints
+Aeq = [1 3 0 0 0;0 0 1 1 -2;0 1 0 0 -1];
+beq = [0; 0; 0];
+
+%Define the inequality constraints
+A = [];
+b = [];
+
+%Define the upper and lower bounds
+lb = [-10 -10 -10 -10 -10];
+ub = [10 10 10 10 10];
+
+x = fmincon(fun1, x0, A, b, Aeq, beq, lb, ub);
+fx = (x(1)-x(2))^2 + (x(2)+x(3)-2)^2 + (x(4)-1)^2 + (x(5)-1)^2;
+
+str1 = sprintf('The function minimizes at \n x1 = %0.5f \n x2 = %0.5f \n x3 = %0.5f \n x4 = %0.5f \n x5 = %0.5f', x(1),x(2),x(3), x(4), x(5));
+disp(str1);
+str2 = sprintf('\n The minimum function value is %0.5f',fx);
+disp(str2);
+\end{verbatim}
+
+        \color{lightgray} \begin{verbatim}
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the default value of the function tolerance,
+and constraints are satisfied to within the default value of the constraint tolerance.
+
+
+
+The function minimizes at 
+ x1 = -0.76744 
+ x2 = 0.25581 
+ x3 = 0.62791 
+ x4 = -0.11628 
+ x5 = 0.25581
+
+ The minimum function value is 4.09302
+\end{verbatim} \color{black}
+    
+
+
+\end{document}
+    

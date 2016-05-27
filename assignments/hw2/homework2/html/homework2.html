@@ -1,0 +1,3511 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>homework2</title><meta name="generator" content="MATLAB 7.12"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-02-09"><meta name="DC.source" content="homework2.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Optional overhead</a></li><li><a href="#3">Optimization settings</a></li><li><a href="#4">Run optimization</a></li><li><a href="#5">Report</a></li></ul></div><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%% Main Entrance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%%%%%%%%%%%%%% By Max Yi Ren and Emrah Bayrak %%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">% Instruction: Please read through the code and fill in blanks</span>
+<span class="comment">% (marked by ***). Note that you need to do so for every involved</span>
+<span class="comment">% function, i.e., m files.</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+</pre><h2>Optional overhead<a name="2"></a></h2><pre class="codeinput">clear; <span class="comment">% Clear the workspace</span>
+<span class="comment">% Note: for debugging purpose, do not use "clear all"</span>
+close <span class="string">all</span>; <span class="comment">% Close all windows</span>
+clc; <span class="comment">%Clear screen</span>
+</pre><h2>Optimization settings<a name="3"></a></h2><p>Here we specify the objective function by giving the function handle to a variable, for example:</p><pre class="codeinput">f = @(x)distance(x); <span class="comment">% replace rosenbrock with your objective function</span>
+<span class="comment">% In the same way, we also provide the gradient and the Hessian of the</span>
+<span class="comment">% objective:</span>
+g = @(x)distanceg(x); <span class="comment">% replace accordingly</span>
+H = @(x)distanceH(x); <span class="comment">% replace accordingly</span>
+<span class="comment">% Note that explicit gradient and Hessian information is only optional.</span>
+<span class="comment">% However, providing these information to the search algorithm will save</span>
+<span class="comment">% computational cost from finite difference calculations for them.</span>
+
+<span class="comment">% Specify algorithm</span>
+opt.alg = <span class="string">'gradient'</span>;
+<span class="comment">%opt.alg = 'newton';</span>
+
+<span class="comment">% Turn on or off line search. You could turn on line search once other</span>
+<span class="comment">% parts of the program are debugged.</span>
+opt.linesearch = true; <span class="comment">% or true</span>
+
+<span class="comment">% Set the tolerance to be used as a termination criterion:</span>
+opt.eps = 1e-4; <span class="comment">% this should be a small number like 1e-3</span>
+
+<span class="comment">% Set the initial guess:</span>
+x0 = [2; 3]; <span class="comment">% this should be a p-dim vector where p is the size of the</span>
+<span class="comment">% problem</span>
+</pre><h2>Run optimization<a name="4"></a></h2><p>Run your implementation of the gradient descent and Newton's method. See gradient.m and newton.m.</p><pre class="codeinput"><span class="keyword">if</span> strcmp(opt.alg,<span class="string">'gradient'</span>)
+    solution = gradient(f,g,H,x0,opt);
+<span class="keyword">elseif</span> strcmp(opt.alg,<span class="string">'newton'</span>)
+    solution = newton(f,g,H,x0,opt);
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">
+iter =
+
+     1
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+
+a =
+
+    0.0404
+
+    0.0404
+
+     9
+
+    0.0630
+    0.1752
+
+
+iter =
+
+     2
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+
+a =
+
+    0.0404
+
+    0.0404
+
+     9
+
+    0.2756
+    0.5682
+
+
+iter =
+
+     3
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+    0.1848
+    0.5295
+
+
+iter =
+
+     4
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+    0.1681
+    0.6277
+
+
+iter =
+
+     5
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+    0.0982
+    0.5947
+
+
+iter =
+
+     6
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+    0.0884
+    0.6711
+
+
+iter =
+
+     7
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+    0.0344
+    0.6433
+
+
+iter =
+
+     8
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+    0.0292
+    0.7027
+
+
+iter =
+
+     9
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.0126
+    0.6794
+
+
+iter =
+
+    10
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.0148
+    0.7258
+
+
+iter =
+
+    11
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.0472
+    0.7063
+
+
+iter =
+
+    12
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.0474
+    0.7317
+
+
+iter =
+
+    13
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.0726
+    0.7263
+
+
+iter =
+
+    14
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.0720
+    0.7462
+
+
+iter =
+
+    15
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.0913
+    0.7413
+
+
+iter =
+
+    16
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.0903
+    0.7568
+
+
+iter =
+
+    17
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1050
+    0.7524
+
+
+iter =
+
+    18
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1038
+    0.7646
+
+
+iter =
+
+    19
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1151
+    0.7608
+
+
+iter =
+
+    20
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1139
+    0.7704
+
+
+iter =
+
+    21
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1226
+    0.7670
+
+
+iter =
+
+    22
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1213
+    0.7745
+
+
+iter =
+
+    23
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1260
+    0.7725
+
+
+iter =
+
+    24
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1269
+    0.7776
+
+
+iter =
+
+    25
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1305
+    0.7759
+
+
+iter =
+
+    26
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1310
+    0.7798
+
+
+iter =
+
+    27
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1337
+    0.7784
+
+
+iter =
+
+    28
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1340
+    0.7815
+
+
+iter =
+
+    29
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1362
+    0.7802
+
+
+iter =
+
+    30
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1363
+    0.7826
+
+
+iter =
+
+    31
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1379
+    0.7816
+
+
+iter =
+
+    32
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1379
+    0.7829
+
+
+iter =
+
+    33
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1392
+    0.7827
+
+
+iter =
+
+    34
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1392
+    0.7837
+
+
+iter =
+
+    35
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1402
+    0.7834
+
+
+iter =
+
+    36
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1402
+    0.7842
+
+
+iter =
+
+    37
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1409
+    0.7840
+
+
+iter =
+
+    38
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1408
+    0.7846
+
+
+iter =
+
+    39
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1414
+    0.7844
+
+
+iter =
+
+    40
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1414
+    0.7849
+
+
+iter =
+
+    41
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1417
+    0.7848
+
+
+iter =
+
+    42
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1417
+    0.7851
+
+
+iter =
+
+    43
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1420
+    0.7850
+
+
+iter =
+
+    44
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1420
+    0.7853
+
+
+iter =
+
+    45
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1422
+    0.7852
+
+
+iter =
+
+    46
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1422
+    0.7854
+
+
+iter =
+
+    47
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1424
+    0.7853
+
+
+iter =
+
+    48
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1424
+    0.7855
+
+
+iter =
+
+    49
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1425
+    0.7854
+
+
+iter =
+
+    50
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1425
+    0.7856
+
+
+iter =
+
+    51
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1426
+    0.7855
+
+
+iter =
+
+    52
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1426
+    0.7856
+
+
+iter =
+
+    53
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1427
+    0.7856
+
+
+iter =
+
+    54
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1427
+    0.7856
+
+
+iter =
+
+    55
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1427
+    0.7856
+
+
+iter =
+
+    56
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1427
+    0.7856
+
+
+iter =
+
+    57
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1428
+    0.7856
+
+
+iter =
+
+    58
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    59
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1428
+    0.7856
+
+
+iter =
+
+    60
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    61
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    62
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    63
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    64
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    65
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    66
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+    0.0824
+
+     7
+
+   -0.1428
+    0.7857
+
+
+iter =
+
+    67
+
+
+a =
+
+    0.7000
+
+
+a =
+
+    0.4900
+
+
+a =
+
+    0.3430
+
+
+a =
+
+    0.2401
+
+
+a =
+
+    0.1681
+
+
+a =
+
+    0.1176
+
+
+a =
+
+    0.0824
+
+
+a =
+
+    0.0576
+
+    0.0576
+
+     8
+
+   -0.1428
+    0.7857
+
+</pre><h2>Report<a name="5"></a></h2><p>Implement report.m to generate a report.</p><pre class="codeinput">report(solution,f);
+</pre><img vspace="5" hspace="5" src="homework2_01.png" alt=""> <img vspace="5" hspace="5" src="homework2_02.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.12<br></p></div><!--
+##### SOURCE BEGIN #####
+%%%%%%%%%%%%%% Main Entrance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% By Max Yi Ren and Emrah Bayrak %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Instruction: Please read through the code and fill in blanks 
+% (marked by ***). Note that you need to do so for every involved
+% function, i.e., m files. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Optional overhead
+clear; % Clear the workspace
+% Note: for debugging purpose, do not use "clear all"
+close all; % Close all windows
+clc; %Clear screen
+
+%% Optimization settings
+% Here we specify the objective function by giving the function handle to a
+% variable, for example:
+f = @(x)distance(x); % replace rosenbrock with your objective function
+% In the same way, we also provide the gradient and the Hessian of the 
+% objective:
+g = @(x)distanceg(x); % replace accordingly
+H = @(x)distanceH(x); % replace accordingly
+% Note that explicit gradient and Hessian information is only optional.
+% However, providing these information to the search algorithm will save
+% computational cost from finite difference calculations for them.
+
+% Specify algorithm
+opt.alg = 'gradient';
+%opt.alg = 'newton';
+
+% Turn on or off line search. You could turn on line search once other
+% parts of the program are debugged.
+opt.linesearch = true; % or true
+
+% Set the tolerance to be used as a termination criterion:
+opt.eps = 1e-4; % this should be a small number like 1e-3 
+
+% Set the initial guess:
+x0 = [2; 3]; % this should be a p-dim vector where p is the size of the
+% problem
+
+%% Run optimization
+% Run your implementation of the gradient descent and Newton's method. See
+% gradient.m and newton.m.
+if strcmp(opt.alg,'gradient')
+    solution = gradient(f,g,H,x0,opt);
+elseif strcmp(opt.alg,'newton')
+    solution = newton(f,g,H,x0,opt);
+end
+
+%% Report
+% Implement report.m to generate a report.
+report(solution,f);
+##### SOURCE END #####
+--></body></html>

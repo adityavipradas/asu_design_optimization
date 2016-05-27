@@ -1,0 +1,7 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Gray cast iron material properties}}{12}
+\contentsline {table}{\numberline {2}{\ignorespaces Correlation between MATLAB (IPM) and ANSYS (MOGA) optimal values for 14 MPa stress constraint}}{21}
+\contentsline {table}{\numberline {3}{\ignorespaces Correlation between MATLAB (IPM) and ANSYS (MOGA) optimal values for 1200 Hz frequency constraint}}{22}
+\contentsline {table}{\numberline {4}{\ignorespaces Correlation between MATLAB (IPM) and ANSYS (MOGA) optimal values for $400^{o}C$ temperature constraint}}{23}
+\contentsline {table}{\numberline {5}{\ignorespaces Correlation between MATLAB and ANSYS optimal values for 1200 Hz frequency constraint and $400^{o}C$ temperature constraint}}{25}
+\contentsline {table}{\numberline {6}{\ignorespaces Correlation between MATLAB and ANSYS optimal values for 1200 Hz frequency constraint and 14 MPa stress constraint}}{26}
+\contentsline {table}{\numberline {7}{\ignorespaces Correlation between MATLAB and ANSYS optimal values for combined structural, modal and thermal analysis using MOGA}}{28}

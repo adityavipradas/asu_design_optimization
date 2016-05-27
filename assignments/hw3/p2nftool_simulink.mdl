@@ -1,0 +1,3066 @@
+Model {
+  Name			  "p2nftool_simulink"
+  Version		  7.7
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.1"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Feb 23 03:25:35 2016"
+  Creator		  "Aditya"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Aditya"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Feb 23 03:26:18 2016"
+  RTWModifiedTimeStamp	  378098738
+  ModelVersionFormat	  "1.%<AutoIncrement:1>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    1
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "p2nftool_simulink"
+    signals_		    []
+    overrideMode_	    [0U]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "p2nftool_simulink"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.11.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.11.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.11.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  AccelParallelForEachSubsystem	on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.11.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.11.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.11.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.11.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      FunctionExecutionProfile off
+	      CodeExecutionProfiling  off
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  13
+	  Version		  "1.11.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 200, 45, 1080, 675 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "p2nftool_simulink"
+    Location		    [2, 75, 1278, 659]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "67"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Function Fitting Neural Network"
+      SID		      "3"
+      Ports		      [1, 1]
+      Position		      [160, 20, 300, 160]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDescription	      "Function Fitting Neural Network"
+      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch"
+      "([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e "
+      "1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);fprintf('NNET');port_label('input',1,' Input');port_label('output',1,"
+      "'Output ');"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Function Fitting Neural Network"
+	Location		[484, 94, 1020, 382]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Input"
+	  SID			  "4"
+	  Position		  [40, 40, 60, 60]
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "250"
+	  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128)"
+	  ";patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1"
+	  "-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  " a{1} "
+	  SID			  "16"
+	  Position		  [40, 120, 60, 140]
+	  GotoTag		  "feedback1"
+	  MaskDisplay		  "plot(cos(0:.1:2*pi),sin(0:.1:2*pi))"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Layer 1"
+	  SID			  "18"
+	  Ports			  [1, 1]
+	  Position		  [190, 40, 250, 60]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1 "
+	  "1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e],"
+	  "c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Layer 1"
+	    Location		    [484, 94, 1020, 382]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "p{1}"
+	      SID		      "22"
+	      Position		      [20, 40, 60, 80]
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "247"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Delays 1"
+	      SID		      "23"
+	      Ports		      [1, 1]
+	      Position		      [100, 40, 140, 80]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('0');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"Delays 1"
+		Location		[484, 94, 1020, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "p{1}"
+		  SID			  "24"
+		  Position		  [60, 40, 80, 60]
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  NamePlacement		  "alternate"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "247"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "mux"
+		  SID			  "25"
+		  Ports			  [1, 1]
+		  Position		  [200, 60, 240, 80]
+		  Inputs		  "1"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Mux')"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "pd{1,1}"
+		  SID			  "26"
+		  Position		  [300, 60, 320, 80]
+		  IconDisplay		  "Port number"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Line {
+		  SrcBlock		  "p{1}"
+		  SrcPort		  1
+		  DstBlock		  "mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "mux"
+		  SrcPort		  1
+		  DstBlock		  "pd{1,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IW{1,1}"
+	      SID		      "27"
+	      Ports		      [1, 1]
+	      Position		      [180, 40, 220, 80]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('W');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"IW{1,1}"
+		Location		[484, 94, 1020, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "pd{1,1}"
+		  SID			  "28"
+		  Position		  [40, 330, 60, 350]
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "247"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(1,:)'"
+		  SID			  "30"
+		  Position		  [140, 40, 180, 60]
+		  Value			  "[0.1002940127522181;-0.094399732674755946;0.050264692801865012;0.066066762109915467;-0.0153848554655080"
+		  "36;-0.11848003090300473;0.065604559426437989;0.086648101135385458;0.0092130985621231946;-0.12248717849731641;-0.07"
+		  "6666043356093283;-0.011680756297580343;-0.1167958689628211;-0.015714152284510435;0.044797342143357385;-0.038839912"
+		  "70153777;0.075293904665116609;-0.093329868299862936;0.031444284260161458;0.17235958754682118;0.045105859695808541;"
+		  "-0.084663610657117;-0.052501106542601553;-0.013315329123032011;-0.12326880661946636;0.14942893752783978;-0.1820351"
+		  "7696656807;-0.13471376913850322;-0.11594330386300999;-0.066758706121840886;-0.11500167293405308;0.0584749806044556"
+		  "2;-0.085023006131932921;-0.058080683702764972;0.13711352425801776;-0.06942594821698761;-0.15742682054407769;0.0270"
+		  "86646592686881;-0.050187337356685111;0.15044422504375393;-0.0022559125122416836;0.02462642350581818;0.094867473469"
+		  "784996;0.0062685323339493684;-0.081120168603107279;0.10146471333404569;-0.10957324081030201;-0.087207073555091053;"
+		  "0.07207858713910241;0.01018413692828825;0.04491652519025565;0.031853390863511827;-0.027016264765005214;0.049995239"
+		  "23522689;-0.058379258546508654;0.0062113480461128724;0.094704989479997725;0.070764559918197786;0.03369033218066117"
+		  "7;0.02365440550855552;0.1189666300823158;0.05124077462539145;0.06143997029303986;0.071615350516788329;0.0049296696"
+		  "140644853;-0.1189940185544358;-0.11690333214631383;0.11717326314342914;0.10414087714775008;-0.096433919574542087;0"
+		  ".025910302249234737;0.15306269294284355;-0.11042070009764493;0.1206199635599015;0.12222888858129505;-0.01352776615"
+		  "119362;0.03657008507515442;0.064265401450068468;0.090184104935658718;0.037177554690743443;0.05879699689993903;0.06"
+		  "0864139928375437;0.083020488038716672;0.00043548595950812638;-0.10220474756929218;-0.11787234579011194;0.049920555"
+		  "68963235;-0.15854793308239024;-0.091713014378557584;0.042236423984834147;0.14024847723419046;-0.11868688237357973;"
+		  "0.032026363439119417;-0.10242342547449447;0.08630870350315098;-0.10256934532753149;0.092687426382310645;-0.1960050"
+		  "3665695235;0.087590663770981167;-0.017618740693694238;0.033570310294242081;-0.10133495554630809;-0.074231322134864"
+		  "774;0.048511195122942066;-0.063274763413839613;0.14751603212560882;-0.10949487302287091;0.076275706723412995;-0.03"
+		  "1046321215982463;-0.028685806951949736;0.067594605131066354;-0.084290636942573161;-0.10331188809409672;-0.04357420"
+		  "5868813408;0.011802424083247734;0.066239194786661154;0.10390270245234527;-0.04433776128119242;-0.09991042382241388"
+		  "5;0.042698611955286944;-0.011590838088743468;0.034206064374370508;-0.0094852626099893433;0.14482885654798938;-0.04"
+		  "3829735138838942;-0.060802705705837019;0.0053459088533967594;-0.17688471605233178;0.090222707432206034;0.074413928"
+		  "019847683;-0.031216196199297639;-0.019178073743530245;-0.0016631274775868788;-0.054215258790355686;0.0396963526888"
+		  "07383;-0.10907154111082148;0.0093669511242350997;-0.076786482081133353;0.12250331454032416;0.093299595881729147;0."
+		  "0044926745119918217;0.0975063172585664;0.0016607804645121947;-0.073373678778891477;0.075737060693005911;-0.1383162"
+		  "1177515246;-0.10380828351745884;-0.016185952408004807;0.10605894785868808;0.10504814714077787;-0.09890337064148922"
+		  "7;-0.046254284311030326;-0.047994718819246968;-0.069086172470221377;0.09712672161839854;-0.04384579504130106;0.014"
+		  "404913174929734;-0.075345444179373625;-0.1333285508557682;0.0029312487507401294;-0.014140923341884644;-0.129280104"
+		  "99772213;0.10675796856702356;-0.041836952473960423;-0.098081746669383046;0.057288279300783958;0.038364618817537964"
+		  ";0.011999277724765464;0.029505441615136418;0.0071415331064920455;0.05901218951564962;0.027075582614135042;0.134871"
+		  "55577292412;0.09457387061677143;0.09253800866598913;0.11320768419229174;0.079583961118465774;0.091850438143257121;"
+		  "0.12093249537303799;0.10601035764842895;-0.072934549103236546;0.0033920212387909283;0.055974462515143777;-0.099692"
+		  "45490794737;-0.13650069530908629;-0.054823553595479753;-0.013086175172535833;0.011245946117456617;-0.1581213707214"
+		  "7614;0.083995476301420166;-0.06440283317267799;0.14605221975927982;0.088046754505778368;-0.099753258090572283;-0.1"
+		  "0087130629100403;0.025616328076128233;0.010051607994540487;0.15326732097247864;0.04968793323771057;-0.003436137003"
+		  "6244919;0.056481005640171229;-0.089138957612397748;-0.095382844200650851;0.11687592916888213;-0.045830924309557097"
+		  ";-0.025948076867055796;0.068626026815564636;0.14509991754778051;0.047410550314454646;-0.12266703882112996;0.121914"
+		  "65037965127;-0.023369747481917197;0.073707435461459886;0.084831004560285805;0.085472411416612895;-0.06526020326517"
+		  "9673;-0.13001705033274757;0.14365528491087617;0.080927389807962227;0.10716054501153381;-0.13817584749008427;-0.115"
+		  "69857144469539;0.12246282297283584;0.074529190176600979;-0.11030188752555621;-0.14574203065472899;-0.0796428607290"
+		  "38714;-0.046097276659165735;-0.043923299256344812;-0.11251619534007268;-0.11518731665726299;-0.12186173301971762;-"
+		  "0.03386641991671361;-0.046351144758338812;0.039129944265764889;0.087907655724936806;-0.14316916445439529;0.0205523"
+		  "82461444467;-0.024190199931501063;-0.13650709838294511;0.10300741119455006;0.098153951551065113;-0.082456609376571"
+		  "205;-0.067368345404212382;-0.12340880889109979;-0.001130884932676544;-0.035217747415480706]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(10,:)'"
+		  SID			  "48"
+		  Position		  [140, 580, 180, 600]
+		  Value			  "[0.1498977006742708;0.15685780777317748;-0.11487305303805516;-0.13895438248560799;0.062792765932425082;"
+		  "-0.093648385542003901;-0.089724127545485491;-0.0118143582365691;0.012370579133310413;-0.063984060022601735;0.08734"
+		  "6771234488294;-0.026137674693663415;0.095040506392004606;-0.10450881928104068;-0.088263858742763893;-0.13655551898"
+		  "321133;-0.13990042732498573;-0.033275288196987871;-0.14542839801100074;0.097444993123920604;0.012575913590673121;-"
+		  "0.023358505268004696;-0.026321567244047495;-0.012350376757157715;-0.021478682039086802;0.15841373831489811;0.06400"
+		  "5547043579136;-0.12100065191250041;0.018266576207856999;-0.00050244332414627773;-0.11091274183235364;-0.1176800179"
+		  "1320186;0.026874170976665519;-0.06195328919636816;0.14515651836907678;-0.11855003139255431;0.12686242673069972;0.0"
+		  "0049274690613227529;-0.12717812580790286;-0.091770309500704542;-0.049954379870873575;0.037497802700608367;0.106628"
+		  "47572543163;-0.15378583652857075;-0.049533775351792361;-0.16320426001663713;0.14452224711325307;0.0191929502155645"
+		  "53;-0.01613916133682184;0.049757713660458787;0.057337015293614027;-0.13399995554077457;-0.13513959853890381;-0.009"
+		  "8375478075807665;-0.058061227993532277;-0.1044011951500069;-0.080395163734906808;0.13258151015229547;-0.0646627084"
+		  "13743636;-0.1332258706089926;0.13087896726845499;0.12109414664002596;0.13796924030148799;-0.10727275347454365;-0.1"
+		  "0502452344942763;-0.007087334639251406;-0.084789063114646845;0.050697423966978843;-0.040937846227800778;0.11745841"
+		  "905451648;-0.11331736866960544;-0.12447614368988133;-0.026105551453425805;-0.1029670492747798;-0.06598810044837305"
+		  "5;0.094101323272615542;-0.056606543645945744;-0.089222491038301252;-0.12847741438992985;0.14637107684628642;0.0309"
+		  "39256937276168;0.02010159769700837;0.034534004130500187;-0.13469634418293555;0.058448885826138483;-0.1410216328164"
+		  "9249;-0.10944078685597131;-0.13906698892616828;0.057059337598201622;0.039336851121883967;0.032381146490523538;0.09"
+		  "3026161000144852;-0.030964950197566204;0.085961356369402053;-0.097800323148198073;-0.14142276145891397;-0.06859793"
+		  "8460674898;-0.10134507620381762;0.092083229582478471;0.11501505632281059;-0.038891443998285188;0.1276107313501518;"
+		  "-0.044596111085902522;0.012395353994911085;0.10113519221288247;0.047828836835872253;0.16757478662133088;-0.0114261"
+		  "66503211968;0.15012193922831898;0.064512800910345267;0.062687559440613827;0.13268840759063949;0.080589366432472206"
+		  ";-0.15028700754519572;0.12880787552030304;0.084259926229442644;-0.016557338281676506;0.034301961951982443;-0.09656"
+		  "5699025790833;0.087801413533699968;0.045019872244907388;-0.093413242908319871;-0.13564431385785336;-0.151092888572"
+		  "65704;0.086764484533328551;0.078910196854629494;-0.10688071863184635;0.10761390094367065;0.12826731219140639;-0.15"
+		  "019062207593584;0.10990054839844951;0.1280010596112203;-0.02440938788626448;0.040464017662113605;-0.02285888109327"
+		  "3144;-0.036666611859177439;-0.096549065882258034;0.0074031061405606972;-0.030684707876184044;0.021333142276370481;"
+		  "0.057283170884552426;0.078867165346782397;0.074704546792802584;-0.12843556245361168;-0.11577408365770375;-0.001017"
+		  "8242512149012;-0.11624982241053919;-0.033768355429668689;0.019972346117438602;-0.048440935489964129;0.063962397086"
+		  "809453;-0.070330877024000885;-0.068041058857801387;0.065785155835225151;-0.037487373019686;-0.15896990128185126;0."
+		  "030537729577137063;-0.056783675412735518;0.070527614450482209;-0.095203784605879069;-0.021622613239785114;0.055836"
+		  "592699397433;-0.093770706843937901;-0.01588178998746706;-0.010265057800364052;0.14059071515263713;-0.0738114572200"
+		  "8059;0.0095333103842892581;-0.089555942024397914;-0.13867848379566211;-0.028573088330290122;0.0072516670686751626;"
+		  "0.019881600499107609;-0.078048085240703488;-0.014192436566559656;0.13988048909420284;-0.017236984521205669;0.00488"
+		  "40905859424888;0.0042713735693876778;-0.08836519912585207;0.11034464985566721;0.036129792051964038;-0.092111856471"
+		  "906117;-0.12687153905122492;0.015358434370455509;-0.049975185020666883;-0.088961893036024198;0.029569883446262116;"
+		  "-0.015702510548778425;0.11960375162819986;-0.15704117944912824;0.10614992227063137;-0.11057806600245194;-0.1105219"
+		  "6086831215;-0.074898943077212288;-0.036122303115710776;0.13142886916373281;0.071677636130792477;-0.054479538321590"
+		  "013;-0.049602219862243821;0.019908984742056005;-0.067461003613802625;-0.089889891318266218;0.09661802853520074;-0."
+		  "017396727387654496;0.067799162860027337;0.045013012738339402;-0.12240942514203935;0.15210805555696988;0.0371820801"
+		  "41770553;0.15097988725918704;0.13885319204340388;-0.15241718841315172;-0.076465980586622587;-0.018229914511599207;"
+		  "-0.024485812355133411;0.0042676712324888309;-0.11438540636038222;-0.13806843022506646;0.10956209161803906;-0.14533"
+		  "493965878766;-0.10309722811500159;-0.065950820985044595;-0.019601298156613288;-0.105122336419966;0.015755481860236"
+		  "897;-0.10105308483213764;0.10401289882606052;0.02803384680224558;-0.088873736223098257;-0.12590105915541303;-0.029"
+		  "998237860110764;-0.078463850912925417;0.046143467900793558;0.036288686120251476;0.055569547195328986;-0.0559925538"
+		  "58667998;0.013894370146840683;-0.025257608540580751;0.095966001299402193;0.02912289663087202;-0.10972571068802615;"
+		  "-0.020811929467892471;0.12241151081193498;0.021056074492167898;0.031991593697594273;0.070931982330467561]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(2,:)'"
+		  SID			  "32"
+		  Position		  [140, 100, 180, 120]
+		  Value			  "[0.11858327189001884;0.17130657910677666;-0.12446324996728339;-0.14335547516942193;-0.00159979161593026"
+		  "27;0.05074708996985762;-0.08182343155994673;-0.12515623387566513;0.014872563852552874;-0.14469638997535753;0.10144"
+		  "388114292159;-0.11205185882758494;0.17811704812968557;0.12968476398262896;0.031473818510314867;-0.1483399213685892"
+		  "6;-0.11391952150967893;-0.074109024763366727;-0.078011179830243291;0.095044718871521772;0.0048557034846762829;-0.0"
+		  "49830863746762752;0.14111467426294155;-0.041295949365764702;-0.087571281165302189;-0.046899629863170228;0.00245475"
+		  "3478520145;0.057643267898404724;0.06061286725733693;-0.1148530098177184;0.036468339816482245;-0.04314800642557616;"
+		  "-0.0029860924872091993;-0.03168121994196986;0.13275825688330439;0.066420042208636274;-0.027670605831911908;-0.0167"
+		  "87569896630095;-0.089345501196732832;0.087676245617609741;-0.16392343262538089;0.029951987144388428;-0.03590471679"
+		  "1794855;0.14127984581241307;-0.078054259986131982;-0.13128370510508963;0.054954128219421694;0.12759745328548705;0."
+		  "041197483456201264;0.025440651672663066;-0.017998445443028772;0.020065700991406119;-0.021092661609336115;-0.118923"
+		  "73081706799;-0.090470359994592339;0.030253508550691234;-0.053874720665013427;0.183961775903349;0.11884081708949151"
+		  ";-0.13895662829290936;0.0024984310331521808;0.13261164644371673;0.036260491626753127;0.042122845503512467;0.066564"
+		  "781158595585;-0.11300260709171157;-0.030141418125202001;-0.1128120461697186;-0.15085355089330138;-0.15092343752388"
+		  "671;0.10793086958149464;-0.0032685878425154887;-0.038358899239273089;-0.11857823009226574;-0.13141920475814339;-0."
+		  "15239014710993393;-0.15749605548837442;-0.14870733232509697;0.008412024719322014;-0.0065762467062862786;-0.1153916"
+		  "7580387381;-0.081833041363851833;-0.040075953614483968;-0.10908718725709973;0.078614429728315852;0.117537297591619"
+		  "82;-0.048244880286530178;-0.14115785003275214;-0.11658305071177921;-0.091333314914028824;-0.095654634297558772;-0."
+		  "030834501759867305;-0.054737877526490841;-0.1518897943615945;0.066017615988883796;0.027905826496640022;0.052224036"
+		  "579671389;0.17144884831035806;-0.073756848437101188;0.11434493334933957;-0.044089252727750466;0.073191094157277758"
+		  ";-0.042304579839926124;-0.1365443723032379;-0.073965997110382986;-0.16434765643506952;-0.12464724554020955;0.06757"
+		  "1117616607737;0.035158747600846391;0.14793275658215121;0.06197664797817308;-0.078989537935176962;-0.09345039759010"
+		  "2596;-0.067845287750656028;0.016124197593141005;0.02220507799196185;-0.094917314321705026;0.050100243223014054;-0."
+		  "10456087970296364;0.11008563815224291;-0.0045473293063179564;0.053126992838533421;-0.13605354530583183;-0.04890075"
+		  "8008527161;-0.14527920832369867;-0.0060410713093764709;0.0078881898210715357;-0.0031589791352302269;0.000505883496"
+		  "80992148;0.11509723060626566;0.054581277107235052;-0.0070905079163169453;-0.095150854523811307;0.05215986934996310"
+		  "5;-0.084331167162747203;0.07773319854314778;0.012024055174586629;-0.082108213880251191;-0.015830303136483842;-0.03"
+		  "6096986587390953;0.044208205847271122;-0.032741439579525626;-0.0076722262563024687;-0.025714753426080959;-0.003043"
+		  "0740658017917;-0.032999674697915628;-0.01682310926346553;0.022020419330287366;0.0046927662423804041;-0.05366936960"
+		  "349046;-0.073966527995403583;0.11784722963005057;-0.1130410521153852;-0.033382344370474326;0.027377136500321295;0."
+		  "025542016215491882;0.040347252084189066;-0.085389192243248688;-0.16033476238835231;0.0026717951361555307;-0.046164"
+		  "6591680877;0.075090435834696823;-0.033640708931362104;-0.079112387520922159;0.020976479739272563;-0.09769204031572"
+		  "0638;0.015510156256307485;0.09256498927820736;0.10483600967297749;0.15845628514204985;0.028374429893887033;0.06488"
+		  "735406640625;0.01401211242638181;0.092599847859583653;0.16120319278461942;-0.054111557048346887;0.0108663273968522"
+		  "91;-0.012755050440559912;-0.1340793509740002;-0.16823238649919639;-0.098491960217178723;-0.024833953346358868;0.08"
+		  "9358969098541033;-0.03217387971938801;0.069872383570620519;0.10242648531171365;0.038403063526121134;0.036786533651"
+		  "047025;-0.03598978657543133;-0.15959619029229286;0.058892465863620409;0.0024056991322740852;0.065288138722717437;0"
+		  ".038824765443848136;-0.075854407028705162;-0.047218731171942245;0.1533012974761708;0.14716356926902921;0.008608677"
+		  "769667842;0.088959100991952519;0.10851386922290912;0.073564431543638648;0.15876931148847573;0.12191629680133652;-0"
+		  ".046156633357477564;0.069590077890723315;0.079448734199913953;-0.12446087641929328;-0.089059945304607396;-0.101199"
+		  "88107310411;-0.00061636555926778151;0.0068115117567891046;0.020461682994017488;-0.031685739853858835;0.00605612833"
+		  "7121278;0.10216027157724292;-0.013176818234370296;0.10259793453616242;-0.033802042338996363;-0.19943571600483412;0"
+		  ".059162801233157244;-0.0064475974329257137;0.068064423848701441;0.089145522098013769;0.082875286647602478;0.102991"
+		  "84715687645;0.15741921901472822;0.12858885442552562;0.11878402033158733;0.10535133822063716;0.084284472020768442;0"
+		  ".0926106309066657;0.028556126218884589;0.0954194921461958;-0.061174141561422646;0.042506113218744701;-0.0469819925"
+		  "4010637;0.10316667351978534;-0.10775647920917468;-0.061816026461410462;-0.09645323914915957;0.054568397262351333;0"
+		  ".060980029423009972;-0.10433280560587924;-0.031960367138608163;0.058694517763812536;-0.12592646384130474]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(3,:)'"
+		  SID			  "34"
+		  Position		  [140, 160, 180, 180]
+		  Value			  "[-0.1346867633010517;0.12253478750070618;0.11949411517095437;-0.044575297347282293;0.083773877778622469"
+		  ";0.041925907492122223;0.0064949206976644648;0.084296023741942158;0.04090179579516335;-0.004464864375006471;-0.0780"
+		  "04485952097399;-0.06953357221795016;-0.11995140510058933;-0.09699281300529522;-0.049878108073112958;0.128146038611"
+		  "9983;-0.10160223495169819;0.10626022627952272;0.062476688420873915;-0.029227925795429648;0.12591747315149557;-0.00"
+		  "29813100646696542;-0.023455225974582553;0.036893374574619116;0.085264543785782243;-0.019868157560214126;0.22248837"
+		  "764661442;0.026065588128185772;-0.013009112881506951;0.084972030392893291;-0.15386728714476738;0.11642014086825367"
+		  ";0.12788309357206168;-0.14727601175315436;-0.13226008630859715;0.056160499104295013;0.091408053178842541;-0.066435"
+		  "957046419275;0.016209055614000042;0.063629986362600241;0.0042845017976159937;-0.044712859396247591;-0.102666704381"
+		  "9;0.050452818036670219;0.064215486288445825;0.014161854944723639;-0.01802635875292475;-0.063468164518752021;0.0220"
+		  "62568664198069;0.054333203477323642;0.084806910028688717;-0.0098740254870503998;-0.014521334507338236;0.0236411811"
+		  "03439022;0.0429495518021418;0.075764247803295576;0.097119578036803864;-0.025093429674418584;0.012423660321537197;-"
+		  "0.13175432992640296;0.10939326002855052;-0.011987915444844111;-0.064069803950092999;0.14326240547359129;-0.1275215"
+		  "4241698838;-0.15636343321098672;0.088739374189779119;-0.098736712473907542;0.093174468739469427;0.1277065580207138"
+		  "2;-0.05493701826525501;0.056366700122227796;-0.12034042173287454;0.085572411315584657;-0.076758905501019756;0.1272"
+		  "3781418926036;-0.14188449418967913;-0.12261202717898689;-0.046980686666218192;0.12167793312762946;0.07231039581881"
+		  "2087;0.072272538086986429;-0.077864613648940567;0.090241880426529419;-0.068799091353604763;-0.11542229598302871;-0"
+		  ".031855003419144601;-0.0090966371313058545;-0.11455407344183177;-0.077464667237552964;-0.056174124776289761;-0.089"
+		  "465572382226202;-0.054574868631038768;-0.055456710021309086;0.048707946481724676;0.094765690849018938;-0.132337303"
+		  "16228789;0.070575085793268877;-0.14004088820418495;0.08601848634719976;0.14970060203527838;-0.030553294318388435;-"
+		  "0.12376663589532926;0.12221075399454867;-0.038507279918942018;0.11023884028329714;-0.11485520109815588;0.163989609"
+		  "95321277;0.075817366726293439;-0.043083206418064408;-0.13520926458962668;0.052612001353791044;-0.10961224591003534"
+		  ";-0.04803481296907619;0.14509684223553151;-0.061576387199502966;-0.0046292412682495676;0.15489231384565877;0.07319"
+		  "9095532907238;-0.062981153388850242;0.11536226573001833;-0.043981510949809052;-0.05027543314785983;-0.124611711648"
+		  "71812;-0.08217920246986532;0.13253788187979956;-0.07714294311532495;-0.051743945875077448;0.071273502881939357;-0."
+		  "037404877088165242;0.12521355737235407;-0.070376236954941912;0.14027452570708021;-0.036832883789978087;0.007643806"
+		  "411174946;-0.060702639628623281;0.11785550611459511;-0.14356455281535691;0.0082718686311733618;0.02948319109770758"
+		  "7;0.091890764876764244;0.015871531078463341;-0.028891410878934473;0.041031720718685147;-0.074498356911378405;0.098"
+		  "831464593356996;-0.16309459975582535;0.082134960692215625;-0.0079980274681605377;-0.10964000804066439;-0.122728726"
+		  "12150883;-0.12756103496459892;0.028756620961631799;-0.098917823767484467;0.0096596100112074385;0.12789669166058257"
+		  ";-0.11085939610178806;-0.075368424332499934;-0.053304078186303082;0.10673941782679458;0.10409283948068453;0.100535"
+		  "88714809625;0.029361596239685175;0.13087127422439471;-0.15146867392900201;0.11143140581976804;-0.11211403487628871"
+		  ";-0.022519195998283906;0.10219522729814112;0.041466191142837255;0.12375922508869346;-0.082846285128768751;-0.13658"
+		  "786289625774;-0.05231326350079897;-0.087019788457251251;-0.11961028835682105;-0.11096532020838523;-0.0718500917284"
+		  "06035;-0.12023748858275933;0.084023293331909901;-0.066311098938518775;0.091542308148908791;-0.043369400735023628;-"
+		  "0.15766351394559167;-0.035425280393025317;0.10662164597349094;0.10404031750447552;-0.055597049716969708;0.12321892"
+		  "200633487;0.078328679971067142;-0.031808931945588058;0.055546814197274801;-0.0026006121374698241;-0.09215593421368"
+		  "5911;0.079336477633409508;0.097888764032987408;0.051817740294014508;-0.038505002402364465;-0.052740532837369652;0."
+		  "08641768405852078;-0.050374017981004854;-0.075069898754621237;0.038870151335133808;0.069095309063571891;0.09868340"
+		  "9308647829;0.08891948144792268;-0.060419383351441605;-0.0079360478034989426;-0.037672292197857747;0.06292958502272"
+		  "2237;0.15008874616374823;0.14893445388002069;0.025788321933657585;-0.080911883072015856;0.077267787884018294;-0.08"
+		  "5660429749399317;-0.042828304085040882;-0.021489180979617079;0.12614412443218165;-0.069772742704650503;0.026247510"
+		  "510670112;0.10076291183354402;0.098462262791046737;0.038272977093663209;0.12600466147531866;-0.12909128211844909;-"
+		  "0.16085205046045228;-0.0068066782143087869;-0.080695395694036928;0.030357427770280273;0.05940091606619171;0.134682"
+		  "28342004809;0.11449540465814416;-0.1231113026637158;0.054609145224183836;0.14628073589370472;-0.070683184492935591"
+		  ";-0.13956059111350491;0.021895513153787825;0.086626523115280268;-0.10635208943368536;-0.045115554874651104;-0.1495"
+		  "6501556831425;-0.063900348326142928;-0.13063434078571229;0.025411791323795587;0.096474236808792066]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(4,:)'"
+		  SID			  "36"
+		  Position		  [140, 220, 180, 240]
+		  Value			  "[0.11193617570786235;-0.019970020405736675;0.12312221847897856;-0.16551665237033278;0.09286277634088638"
+		  "3;-0.11513448932992251;0.039656676326160274;-0.10443862140743779;0.16823558310663175;0.076137384968755772;0.009448"
+		  "5583999074346;0.12033266202325783;0.056452519578925213;-0.070960412927427205;-0.005712500950473755;0.1070152234490"
+		  "149;-0.048997586130950475;-0.12345771579161421;-0.098363911597858664;-0.0043997181889304134;-0.021145814558235852;"
+		  "-0.088551504266903031;-0.09409267329903355;0.0084966954304877083;-0.15968242053402476;-0.080743756580847079;0.0580"
+		  "75294648837233;0.099672035960392244;-0.0057541744688855293;-0.13977144623060661;-0.13797157160097023;0.05577897229"
+		  "9617542;0.048694823967507218;0.13456555165661085;0.066619516475243945;0.0088590674295318736;0.084061440198419851;-"
+		  "0.03971173006451393;-0.079801333893661536;-0.061666322920525068;-0.0051300042581569789;0.098926520852076316;-0.141"
+		  "7473631204732;0.11794128617867891;0.091458835518249834;-0.040720209843969346;-0.099748539641176012;-0.095628020566"
+		  "296393;0.14620093774679793;-0.031086565852980419;-0.063910452061366196;0.072251638837984994;-0.0011559561426020509"
+		  ";-0.021570686667716703;-0.08994814686640408;0.039732570621541174;-0.023890081193948972;0.021548893432552813;-0.084"
+		  "536276028498433;-0.10222845460770266;0.069321335488288324;-0.0043339761813693716;0.0003784761677196957;0.008866015"
+		  "3424466974;0.036300674788987228;0.046632537649572182;0.12319672768108608;-0.13979344172370489;0.17377634984656304;"
+		  "-0.043872540940719039;-0.0090922462379568001;0.1391913935674754;-0.021062654758229882;0.076847387968476247;-0.1156"
+		  "1255391736572;-0.0517323637095237;0.091893417785663636;0.033488798275898686;-0.10406837858464316;0.110507860840421"
+		  "88;-0.12868206599744797;0.11401822605190837;-0.13359347699703858;-0.10187147824106267;0.044569526829085597;-0.0739"
+		  "82638175552423;0.041353627691667699;0.016448007674639921;-0.071189445841315896;-0.14370133216469458;-0.06346911125"
+		  "186451;0.05963965105551066;0.0011150683501980373;-0.037148012868713352;-0.12699278837357147;0.00555963812871107;0."
+		  "01781493470702596;0.080656328910273745;0.10003599867684812;0.11165874765447309;-0.10380712595604297;0.107975614812"
+		  "10802;0.075775379831910031;0.085172658919084501;-0.10036789567603104;-0.15609185078531168;-0.13106979412620104;0.0"
+		  "32186690505617038;0.047567633696596119;0.13366997380330325;0.088120023619097182;0.0036137515742078767;0.0010086134"
+		  "430487663;-0.12080945384354363;0.071695771488008708;0.13131061590050958;0.16801247563765831;-0.090335710324708385;"
+		  "0.036418005090069386;0.06001282114059097;-0.052927547432876046;0.053643411275829327;-0.10633900902558648;-0.089521"
+		  "75103370133;0.025101640525148728;0.062931476595866037;-0.091421298744721755;0.11225991328185296;-0.014162423602036"
+		  "293;0.0014764665520994149;0.10580960664450369;0.10509365111391934;0.071039757723067976;0.103284882946582;0.0467992"
+		  "80876009049;-0.075002150114306387;0.093703725803114063;-0.005542202299177631;-0.080634046752983801;0.0961322884133"
+		  "34863;0.025417191330868939;0.039841889345016049;0.10772875172909548;-0.0030955103328117587;0.019418994346762492;0."
+		  "035741287570247221;0.1090272938147276;-0.14431577125708284;0.083940780507121268;-0.0094551283391451219;-0.00211591"
+		  "02381162714;-0.023405052145280131;0.1477214872529285;-0.11586391383127714;-0.064914342780324097;0.1271646780318096"
+		  "7;-0.02194534200408536;-0.11654582271945323;0.015337848466236337;-0.0039914069701430114;-0.10612274291892269;0.145"
+		  "35534016672136;-0.10616705780272657;-0.0072502083294072621;0.039198242905032696;0.14612822446662579;-0.10383414131"
+		  "486721;0.15062880084115879;0.096710592362387354;-0.071437717492260647;-0.15985712704740929;-0.10211802390074058;-0"
+		  ".13983652198445429;0.060561848909895362;0.073386939076967542;0.037383894970640118;0.024948482265823187;-0.04993925"
+		  "3249605915;-0.071459045135290472;-0.085580982475052844;0.13534292098326306;0.07554439794249633;0.04207200960775835"
+		  "1;0.15848833526121517;0.075884396165997361;0.16704235130511402;-0.077026389892400307;0.084081414937414986;-0.00755"
+		  "76094712176238;0.13281395725293402;0.00273779242243839;0.099011512436921204;0.087008407754057993;-0.05270533460647"
+		  "5474;-0.066433096009823389;0.12173147250601564;0.18469036680853837;-0.13859923983165859;0.08910995746375279;-0.148"
+		  "97573659144703;-0.1352285900401472;0.021891915513750693;0.14941031942248834;0.021513071946861896;0.056614768844646"
+		  "994;-0.12613555290645015;0.0012319202122301148;0.021323712598417522;0.13528376071415213;-0.06045501985842406;0.035"
+		  "837307600244679;0.15113015887167527;-0.055299993417794222;-0.12938541830589545;0.001498894209058633;-0.00608949601"
+		  "23073364;0.029157332107635932;-0.038542664529788259;-0.13908971036015202;-0.061674920100603617;0.04517940050963616"
+		  "1;0.06299271837475548;-0.031539655840638038;0.027099659532359186;0.098477871472201106;0.050026001655017076;-0.0303"
+		  "83618033291322;0.048914827535551479;0.035257761773995998;-0.12471457139480406;0.089126008741296878;-0.088760551946"
+		  "78889;0.10296281781742722;-0.034428334106530671;-0.14831865583866635;-0.12191292823101735;-0.039241345038706549;0."
+		  "13228177523541268;0.036573750847097422;-0.040450952789005769;0.10564920423128571;-0.09594769470265839;0.0983830082"
+		  "48023915;0.15791235063409811;0.093803957969022189;-0.021971513343134675;0.066107809873420825]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(5,:)'"
+		  SID			  "38"
+		  Position		  [140, 280, 180, 300]
+		  Value			  "[0.027750921442852246;0.089333763027681895;0.050971363758106521;-0.12133091240423105;-0.107483822845293"
+		  "01;-0.11484418929702783;0.12156245418384917;0.10191715929685848;0.062048543553209469;0.13788708242709544;-0.115419"
+		  "79682646261;-0.11406097083946037;0.096508483825018601;-0.11882361788757949;-0.021767389532618926;0.003997506184302"
+		  "1348;-0.18668028868044623;-0.14264361797907077;0.056475275343107437;-0.025617428133586796;-0.017154217367821311;0."
+		  "095509626463912894;0.11253623882923595;-0.089918918481791024;0.12299422267608871;-0.063838741525179862;-0.10653377"
+		  "116732249;0.052412272174871426;0.11357714742134359;-0.051348313164858321;-0.028778076497351503;0.01184517095458781"
+		  "7;-0.055893399983593967;-0.10490940822129276;-0.071495018572697536;0.065389959889107896;-0.1388743604905921;0.0040"
+		  "11499724288466;0.06510078963349375;-0.025427228511845257;0.013435377704654791;0.028929593920390833;-0.085522995574"
+		  "104463;-0.071992923820079324;-0.032164333258495416;0.024624217772324011;-0.063533847077457684;-0.09138422930403582"
+		  "2;-0.1277564528469507;0.008097117952371868;-0.09958908830104779;-0.037240152980814074;0.06125505345933361;0.128803"
+		  "7133236434;-0.11772270631905965;0.039785298451269303;0.053630617192214521;0.014326301710369917;-0.0982902169793729"
+		  "57;0.046691704584128101;0.0040112966603684354;0.059100556889618731;-0.11330445604520974;-0.13210161798784564;-0.02"
+		  "1579303619381419;-0.081675702233087066;-0.096585023498856518;-0.083187014448083782;0.14893954142041091;-0.04182592"
+		  "3932034541;-0.13529004366357952;-0.063881269231571142;-0.036907909837763583;0.029074952553398231;-0.00910557024613"
+		  "45488;-0.0886519740202069;0.099299199265810822;0.047159895895491265;0.080233745755428285;0.10963460678124891;-0.08"
+		  "2472252795759454;0.13710202775802555;0.086541387740516465;-0.060777083390495437;0.1364453053982414;0.0578818480507"
+		  "75724;-0.16338134511464442;0.10119668376094759;-0.053166266578641874;0.17322959668857843;-0.081476213856941149;0.1"
+		  "2826084491602302;-0.02866297220628379;0.060191645218005831;0.025394713119207674;0.022514324090479813;-0.0854163423"
+		  "78333635;-0.0076290391526287263;0.067844641182639817;0.017932723462720797;0.05653443542982714;0.071099611502479454"
+		  ";-0.094344021057080604;0.12659267885784686;0.093199275018598135;0.024187022450778084;-0.15555111236194996;-0.00077"
+		  "865661275062896;0.046011898626979866;-0.005588651481554646;0.13531886499025106;0.029865807299459389;-0.04645766634"
+		  "700061;0.10297218156023166;0.086435453661124942;-0.11361738646665007;-0.021528505136299156;0.13176438525768452;0.0"
+		  "80200075420307673;-0.09615997130785707;-0.019399597607807639;0.083736661672594706;-0.06646148074272934;0.040308781"
+		  "552329281;0.055041141555101786;0.092562953909224366;-0.045082817864544975;0.15875795231076323;-0.12099681596937041"
+		  ";0.11441342316159704;-0.015744391540569433;0.12604074030620874;0.12333510362561144;0.087728999860679224;0.09429062"
+		  "9347845351;-0.052964031203083517;-0.066302890911825757;-0.12349034526949738;-0.040741833201468555;0.09456448809571"
+		  "7519;-0.095086395014592234;-0.083363394321069179;0.077091972951416454;-0.12713836263335157;-0.10482660318244047;0."
+		  "027148225938043138;0.072290319941986758;0.050510121363988601;-0.017342858485061834;-0.083594893237955853;-0.074312"
+		  "433659272412;-0.13840462113987836;0.13215625883340792;0.12751912280185218;0.083965878630784072;0.05288546402001244"
+		  "3;-0.12983741363995949;0.13118956865145501;0.043637859962857913;-0.074359341617730376;-0.09754434629725231;-0.1292"
+		  "6463366794244;-0.13337379355420068;-0.095717474900841606;0.10178684732682967;0.13008973673875257;-0.09597605677241"
+		  "2666;-0.13297150684972461;-0.076132605120126068;-0.065107811238804617;0.034417952378226098;-0.092683553518315739;0"
+		  ".073696889384673919;0.11670593920705453;-0.050069619922721603;0.13094705229937467;-0.013266469874388044;0.07462773"
+		  "3208199806;0.029038731633981792;-0.022258974594151913;-0.015352914336425098;-0.015316230433890089;0.14426134677047"
+		  "342;0.025944378108827344;0.0057090083493550317;-0.027466004840881988;0.037891681640923623;0.16004080857498976;-0.0"
+		  "31353486776790798;-0.049133739293102753;-0.09204198580232123;0.087248355838423886;-0.13537980578430836;-0.01333466"
+		  "9963212649;0.065225950384912856;0.01554698282513068;-0.11192401294147482;-0.017467963431909608;0.01244708161026452"
+		  ";0.11097344189443142;-0.061367339191107123;0.16133984659543124;-0.026410434693771578;0.10607899015658247;0.1243026"
+		  "6015700558;0.12649397657917352;0.10755760343278682;-0.14843243944027862;-0.15007821145248199;0.13727328998619232;0"
+		  ".012105552862198714;0.058720929194462014;0.13747802048251737;-0.048853316023100557;0.076353320014812764;0.07042977"
+		  "1478757702;0.052272701551300392;-0.15853981001808837;0.079359016299055285;0.093443800947426658;-0.0784105415749462"
+		  "3;-0.047855456207016547;-0.12278409982058255;-0.069775320517153155;0.076059377684614807;0.10767650981783845;0.1175"
+		  "9087123754851;-0.00025520039236449861;0.11298778496648981;-0.15339454032016478;0.049662720040926547;-0.04703987517"
+		  "0280909;-0.063060882180428407;0.011105075836680975;0.037420557541700386;-0.098070686133738663;-0.15430148007554215"
+		  ";-0.13805065854399301;-0.1079385847649029;-0.14809109911758167;0.0063053604092027579;0.014353211997740414;0.011238"
+		  "024370749474;-0.11913953675826852;0.050646243339013824;-0.027158165035805901;-0.091824890151861044]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(6,:)'"
+		  SID			  "40"
+		  Position		  [140, 340, 180, 360]
+		  Value			  "[-0.11132366962688911;-0.12117158421269621;0.060266264675858119;0.064441759850803984;-0.018325306214018"
+		  "146;-0.015123297034342812;0.1296706774638374;-0.026375558790394427;-0.026712269488911707;-0.12348493921486549;0.03"
+		  "33663971379633;0.086561045138046425;0.076935116409196341;-0.11744804927056059;-0.15114137774449177;-0.022156842267"
+		  "362548;-0.068061606075588268;-0.08884584485943095;-0.095746748757290848;-0.054652492445719569;0.091557321499749836"
+		  ";-0.10604486147884114;0.15302459961845272;-0.1505951507795189;0.080854135372112154;0.092556824125421946;-0.0317385"
+		  "0924665414;0.11171257933138373;0.043587509027171858;-0.055553046006035472;-0.085910534825625495;0.0652555877693077"
+		  "74;-0.073842540922598676;-0.12130147500705304;-0.02193435131326078;0.054466128092139382;0.014027967994439628;-0.16"
+		  "371313471929749;0.15392374435976039;-0.10008096394806532;0.11355572344981146;0.18714398481837638;-0.10070556927184"
+		  "927;0.041412475153681266;0.070999094888416617;0.059446343771772978;0.056127844997486513;-0.040586883854959142;0.07"
+		  "0089556929801122;0.0060395265473162886;-0.078455375156721907;0.19862587267300458;0.028149320654019105;-0.034614132"
+		  "112885686;0.058914005227209701;-0.15042092171853974;0.00052393829780420604;0.043367034742035994;-0.026854160046286"
+		  "553;-0.0026294326491172804;0.11793143201862961;-0.057652737026459643;-0.00092421860794036144;-0.14213028147570927;"
+		  "-0.14839438298588789;0.054667059091049221;-0.066195420609360456;-0.0089816172834375641;0.12485571771885569;-0.0755"
+		  "00657402355606;-0.10500743983671242;-0.034444888740774594;-0.1290783840214855;-0.10545671228885373;-0.124612171295"
+		  "61368;-0.10743030557646466;0.034444439037852853;-0.026995934293656987;-0.039024685700548616;-0.17305241966864968;0"
+		  ".015746314607413114;-0.15793659266372909;-0.10039512792612743;-0.066453388266373842;0.0036028485941156105;0.022811"
+		  "089700185739;-0.031969495351026944;-0.029091831526706635;-0.050271822699392295;0.010048463796237096;0.008090864030"
+		  "1447839;-0.068899107338161347;-0.033571993692734156;0.15824475759847217;0.013963767285626203;-0.081191347284819124"
+		  ";0.045358822590578843;0.076154255387647904;0.075656107776016002;0.0070026713831667919;0.01932578873703349;0.024071"
+		  "787202559244;-0.12039517545710435;0.075653073871925908;0.15008737241693995;0.11302321783324878;0.07164129165625267"
+		  "3;0.023610577336029715;0.043369301761076874;-0.03013422245036252;0.077790997326245268;-0.06560004264029233;0.10683"
+		  "268185897894;0.049633974569836176;0.042642036431609846;0.073066741124301449;-0.015042930525268984;0.06723676805596"
+		  "0058;0.066498028468044063;0.1153516499868321;0.15588345853634786;-0.1277752278769341;-0.12224605090831997;0.074220"
+		  "316579577533;0.084520841671796812;-0.011666819442198767;-0.0028053936171493375;-0.064023473569507799;-0.0168433013"
+		  "35554259;0.1363954918252622;0.10126412297015171;0.13519656742616609;-0.079210467049515551;-0.041189651345349992;0."
+		  "070833182280777091;-0.026780420329950563;0.14388391690189806;-0.10605719354802286;0.0061424106799903419;0.14875199"
+		  "499268116;0.0022869408700108944;0.0014113735470513717;-0.03691567408898002;-0.10393419270288096;0.0456383509607215"
+		  "66;0.10621967879910633;0.16978787962658876;0.010128085999610814;0.040950961469116948;-0.005598553362913321;-0.0497"
+		  "49594921583165;-0.10872384044476893;-0.10376447302128129;-0.025059074655669509;-0.079151666215928271;-0.0699143353"
+		  "78623307;-0.017300466769394562;0.14197241211666822;0.013038592971306072;0.011637751117336999;0.014118074203470329;"
+		  "-0.031114878136491022;0.13700028943266651;-0.10615129048540238;-0.088661948717556505;-0.016357014264599137;0.14114"
+		  "426355403517;-0.047540663614310801;-0.016149627360575947;0.12015951161851092;-0.052755805827041889;0.0517162605370"
+		  "3695;-0.012955939013325249;-0.12667490882581781;0.11066808150387274;-0.095843179097261214;0.18215118209446399;0.02"
+		  "9790608698447352;0.009528840279941898;-0.072640726898736671;-0.02346444596179623;0.11226772558726617;0.01011890705"
+		  "0827967;-0.14572494499900032;-0.056618067252783968;-0.057488987247958451;0.056511153479316664;0.17152702904765613;"
+		  "-0.085463139868784177;-0.12498113829659728;0.10215759203433973;-0.087509961904437258;0.11233627266655125;-0.048728"
+		  "577973725241;0.059042471800994444;-0.053286693313164268;0.039868886788981199;-0.082646293259120415;0.1593680384739"
+		  "1448;-0.15411441371228127;-0.061352531064447505;-0.034336797944975433;0.15428389506190854;-0.070651547813760998;-0"
+		  ".075659059961108333;0.098963147303183313;0.047332397556352594;0.13569821375107582;-0.033360048827677291;0.15027975"
+		  "039991318;0.027377550745746777;-0.12690310774653832;0.036474899576257817;-0.089727081006651527;-0.129153040762951;"
+		  "0.0035518296603385263;0.078825680214829733;0.084097851384665898;0.046693913806072178;-0.12204454788076287;-0.01116"
+		  "5396352748136;0.14103420089047464;0.13655179263185963;0.082680961118191967;-0.074546073451483397;0.090842940413976"
+		  "975;-0.028959013210109737;0.074807818327690428;-0.13584801064467869;-0.10920061759548533;-0.0033404608241601307;0."
+		  "080378561034267437;0.1700747687577559;-0.073309621962639071;0.086276785290607449;-0.092656569411202122;0.032325682"
+		  "621439318;0.11690658960755998;0.011254515237741887;0.0093588116460612044;-0.15858439901579294;-0.00091589351485464"
+		  "1;0.033551965603143191;-0.025596487342775382;-0.086927040199304001;0.015785955100083723;-0.09144993287817596]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(7,:)'"
+		  SID			  "42"
+		  Position		  [140, 400, 180, 420]
+		  Value			  "[-0.080078046432642991;-0.04329411308344637;0.083187320754181629;0.061027695514769546;-0.01445114021822"
+		  "8926;0.14631490286347831;0.032340973830054874;-0.085839485540228161;0.014106165411657823;0.02893264851868791;-0.09"
+		  "5435416944510854;0.013135416680472892;-0.13899480917967291;0.11602672422011433;-0.097188620409940765;-0.0345069189"
+		  "56298219;0.16727920920060027;0.066138108236845308;-0.041639219205644222;-0.011132560376949678;0.13447974835203483;"
+		  "-0.094990839219194032;-0.026691090692152562;-0.059707599155415632;0.0012562222992826095;0.06483975904730413;-0.028"
+		  "107065912058388;0.1371405585133216;0.03496120656687568;0.13863498097873125;0.091459148831681297;-0.038020573309381"
+		  "397;0.017109932702079039;-0.040466032795001876;0.021063395943832702;-0.09983418211238923;-0.01323535873220617;0.03"
+		  "9158550667218142;0.063788400066651291;-0.051130145511756118;0.024896797028071647;-0.0044525476715083457;-0.0194061"
+		  "60506524404;-0.065698145940792763;0.066585647703438694;-0.047570868573378763;-0.10640203170777046;0.07426114914249"
+		  "7013;-0.10398955572813981;0.090849971165785665;0.1246563892788459;-0.1151218038730495;0.14694392033627512;-0.02587"
+		  "3273794704738;-0.077250146325128929;-0.041471046991346849;0.098610134378985581;0.10306487503948282;0.0754384498729"
+		  "04614;-0.12256220311798166;0.10785248152063241;-0.020911270145981535;0.062131925277322642;0.13407985966798242;0.00"
+		  "52186733539937406;0.062189932325199974;0.017137511110392262;0.035897241873961962;0.09006134774692659;-0.0255013129"
+		  "75926931;0.039143637005260516;-0.021071301424252037;-0.082408671347537987;0.042323999285636814;0.13411802366887113"
+		  ";-0.075346918923917802;-0.13641920862576146;0.087889119210651734;0.031828916191454532;-0.16005769786953261;-0.0673"
+		  "69715835654584;-0.033997355071697523;-0.024981295525785506;0.012646965809703118;0.053376741115736093;0.08296754454"
+		  "647165;0.086934400731673689;-0.11652747986765069;-0.095996458582174787;0.0086370819206187388;-0.027604298885381979"
+		  ";0.081139558252484159;0.025385568404544104;0.13940900614283674;-0.11310918063488767;0.14460014862532747;-0.0394166"
+		  "16378687229;0.12393311753000655;0.051019973496437297;0.15310391327811396;-0.022978230579582697;-0.0979528663168946"
+		  "49;0.073348057347298698;-0.04820320686153777;-0.17003876219045047;0.0049206889505850268;0.14284946326750872;-0.063"
+		  "394611781421917;0.010145111526087255;-0.081742500530879975;-0.13579778074730084;-0.10561136435880587;-0.1375746570"
+		  "8664748;0.043545937530042947;-0.12200383579410358;0.048567788681640925;0.035085073861997315;0.1739673715467191;-0."
+		  "13176411310144248;-0.10166440892134726;-0.14559987580552275;-0.14419559367910739;-0.061270803686748657;0.006408495"
+		  "8198786235;0.022986164537076321;-0.008201905035964345;0.092161017109359103;0.12058649715869436;0.07234411715893250"
+		  "5;0.072425681426404473;-0.027438269285218139;0.011168396256561231;0.044198298108621248;-0.015584514435836137;-0.17"
+		  "151700119915644;0.018772410715566581;-0.12817417914654419;0.059787058922262853;-0.13222977725807589;-0.10284114997"
+		  "854049;-0.028181434306295772;0.047461395091049151;0.042460206723015995;0.092746564735138523;0.028383668784568637;-"
+		  "0.12898999077019685;0.15882567895505875;-0.099963949616866138;0.066697415579927394;0.10818890725421419;-0.03356922"
+		  "344507373;-0.19179684507171973;-0.035553505912043051;0.12729420002833922;-0.049839266836814687;0.12602532452186169"
+		  ";-0.038467735907196696;0.11058319436972562;-0.0087571538724564926;-0.040536837289636807;-0.07186495235363119;0.005"
+		  "4297244676730499;-0.10162542919183588;-0.061557902570789982;-0.020248902829856238;-0.069103128302607952;0.13267473"
+		  "342596695;0.0028753949391753728;0.085348358697764748;0.14431853009464946;0.11653540277057182;0.022357861402954878;"
+		  "-0.065039606555602869;0.013230696051922824;0.10485429359510956;-0.021843644200739015;0.11318576371289836;0.0863758"
+		  "15565474356;0.13451462451651996;-0.048246194580777405;-0.10519588509331472;0.1393899564514241;0.008803771650735495"
+		  "2;-0.16764484036783112;-0.15063292448599164;-0.095657091725665888;-0.030059631393941563;-0.12655924125576498;-0.02"
+		  "0565234479266954;0.06205373203689124;0.040952774104651271;-0.011418999521866008;-0.025587348973569644;-0.042146259"
+		  "374194049;0.10395763877674113;0.058844544250124559;-0.15965924086814387;-0.098316903020006202;0.13047273037111409;"
+		  "-0.029609430131471947;-0.072639708205229775;-0.1515957128810666;-0.16007979064038694;-0.085120006469279988;0.10277"
+		  "491136591574;-0.048509617812534878;0.10898008804002469;0.12623438642316245;-0.012089673600923886;0.045703856095879"
+		  "972;0.129569835534944;-0.1601486249568726;-0.15600625662811354;0.059980732205623034;0.16591106350533033;-0.0146706"
+		  "87942375145;0.11582033895518289;-0.0016002462166057648;0.0093409985091427138;0.027579106174108626;0.06961467726811"
+		  "4614;0.0019389191427544971;0.0876546200670964;0.10518657045337915;0.071895160469676561;0.0075856207368965086;-0.07"
+		  "1636872515573213;-0.16497419086224857;-0.15504413219937083;0.093549376235707249;-0.059155481012513729;-0.077462556"
+		  "366354671;-0.091486897106495477;0.040371533704729352;0.15402792808578486;-0.025495807167307559;-0.0742873242946492"
+		  "37;0.090023935362083571;0.15799680891718934;-0.04977887625013061;0.12594934197585825;0.10518262722090549;-0.050710"
+		  "694454071163;-0.03975698208173168;0.058542888175529259;0.017949264013808058;-0.088983806194442364]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(8,:)'"
+		  SID			  "44"
+		  Position		  [140, 460, 180, 480]
+		  Value			  "[0.02198973373874669;0.13316372198384607;-0.032592777166499512;-0.058405549146923995;0.0487096509704708"
+		  "84;-0.038642858079573648;-0.10699720126083244;-0.076416119532516827;0.1163254634023899;-0.0040469231606677838;0.04"
+		  "9145567117784721;0.15773338741814813;-0.030698625459353833;0.023953124400178917;-0.10533462097006745;0.13229750392"
+		  "374212;0.1383591416367628;0.092283227165576354;0.044260421109135951;0.004280866052683273;0.018345951692337385;-0.1"
+		  "0337111211764448;-0.12304179054046943;-0.051432762639008991;0.027676865335369522;-0.037546079515896592;0.047012142"
+		  "900646606;-0.034697841859666949;0.11650160134223406;0.059928866695406244;0.09515901333701654;0.099984431334412316;"
+		  "-0.028291709548806495;-0.09206132110230468;0.14643231678588225;-0.10748696707571344;0.14051750569959673;-0.0697222"
+		  "97997437441;-0.049013616950757843;-0.06913477485287936;-0.15462399037308364;-0.058635619485293305;0.01325566524960"
+		  "5563;0.06220094541281497;-0.14415977097273405;0.10726705720911017;0.066219066465581816;0.03105347953278732;-0.1194"
+		  "8020714228377;0.095038466316475265;0.036473185518333014;-0.13031399408891439;0.16040271347072732;0.066197109953311"
+		  "67;-0.0044879042165432781;-0.0018664063576243838;0.06788657467288163;-0.089960636449942372;0.10658581011671814;-0."
+		  "0074868442317894239;0.14568696371991546;0.11889331998087541;0.083356073117737059;0.006360744195781756;-0.084313836"
+		  "349631577;-0.0104597107987694;0.031957828970971477;-0.12809237760872283;0.0093971204276227377;0.046185670138410025"
+		  ";-0.059584852308767811;0.076515552355376076;0.13672367706785193;-0.052705391480857629;-0.088629269494559529;-0.155"
+		  "97976009072706;0.090797155623177472;0.077179179616312141;0.081455579283168947;-0.12659151412903263;0.0466316872758"
+		  "79539;-0.040825227769225404;0.024419687361364021;-0.11895913064044518;0.07488578054254369;-0.045329549294821747;0."
+		  "049856145742922554;0.055732702717759763;-0.07177904047735234;-0.055908080296184444;0.15453037873992981;-0.05822920"
+		  "3072871563;0.084854827182388473;-0.0081963412406126212;-0.13744839744384788;0.00082456140991461887;-0.039240305545"
+		  "345321;0.040023876222509462;-0.014441708745381006;-0.017134510076453387;-0.1098550981772706;0.15155291417879804;-0"
+		  ".039191884791998047;0.033950602873406829;0.0016628654572234834;0.11038610255345664;-0.058832586683734055;-0.049408"
+		  "460923926339;-0.11694032879459082;-0.11193548633849838;-0.032489348936504535;0.11142091690405656;-0.13731157725855"
+		  "414;-0.13040565065494739;-0.040363866752814941;0.094866538075866785;-0.05738064505151079;-0.13550313609944373;-0.0"
+		  "33009839254295036;0.034697101604520046;0.15517140295101961;0.15839434527489937;-0.1152703785598885;0.0566113229410"
+		  "28927;-0.13690486911521632;0.011317689222292168;0.074695612663005229;0.13515212164212193;0.012709117441195229;-0.0"
+		  "87601931042331493;0.1559595692549593;0.040307712103776275;0.055423057897442937;0.063725731204050284;0.056937072234"
+		  "762319;0.013810354169085029;-0.15224560274526622;0.1225932947731006;0.12591927950420997;-0.071155439144748825;0.15"
+		  "614643893547181;-0.013772013342135887;0.13929678196098094;-0.1537495911488603;-0.14005363763669015;0.1245775096900"
+		  "7349;-0.011534217047144628;0.14870063308702958;-0.036105548214044422;-0.023063216604944762;-0.10985282137844962;-0"
+		  ".091993440909428015;-0.039920417659452916;0.079322870628284511;0.12066933200493565;-0.021275106968991972;0.0029109"
+		  "819326190393;0.079901967248444408;-0.055029171898686599;-0.11717913635427644;0.15536224213625871;0.062924476224702"
+		  "111;0.030928366747066983;-0.042025015366824854;0.020564825927211591;0.076093349326565918;0.051328498698391622;-0.1"
+		  "3021832361600633;-0.11436859248242451;0.04333067207968086;-0.10003519998636944;-0.10149494234102256;0.093167888788"
+		  "280515;-0.027719849488180303;-0.022005832388771809;0.077712685958332486;0.13438984557997186;0.16459675873119803;0."
+		  "023818390474823044;0.06124939359991434;0.14548470456362478;-0.025063650213007816;-0.054129205457789861;-0.09013498"
+		  "0986313368;-0.13731718900498666;0.010868144986692451;0.10926692300936108;-0.081184058055339473;0.15129482944448625"
+		  ";0.14083343022452985;0.088625236140538272;0.036870193934737734;-0.14547706906369517;0.03863224817657783;0.10842821"
+		  "460665601;-0.084804650571383422;0.068273845806638159;-0.05410825321482958;-0.043431323161610053;0.0804555584196387"
+		  "79;0.14570421747336076;-0.077475874861302738;0.03881165959710059;-0.052216138448884515;0.059819005295221869;-0.023"
+		  "400047288483477;-0.083647792268444057;-0.017990879322473823;-0.052098008803686507;0.11538565344679536;-0.087826269"
+		  "812606564;0.046144899404253023;0.073242595439651503;-0.1274080584236266;0.12046572364821095;-0.14876298670212165;-"
+		  "0.15347832514502768;-0.093500191351455653;0.048563827130741581;0.041683992331060682;0.14757647716171537;0.14535299"
+		  "089451531;-0.06967989678093113;-0.0051420117178248856;-0.10375459564201395;0.054190999732524281;-0.130421098201654"
+		  "82;0.0093487869033498094;-0.1505244010949639;-0.127644511174134;0.055440809831086756;0.079253289849844658;0.007252"
+		  "4296556345054;0.093000893798714512;0.019455349862740941;-0.012853416641570524;-0.11581041881925581;0.1307029064977"
+		  "7097;-0.0033435909987729285;0.07602100152902197;0.0061581285952634806;-0.040705022160061902;0.14711824017650368;0."
+		  "058805371839308417;0.017829387499154307;-0.024014594775443487;0.013992180285249331]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(9,:)'"
+		  SID			  "46"
+		  Position		  [140, 520, 180, 540]
+		  Value			  "[0.15497782209361918;0.093197647864523489;0.0047345418699379039;0.14358485103802696;0.00687354603341197"
+		  "58;0.02056543557668741;-0.10197771994805051;0.069879641987281263;0.056871408000226914;-0.16916772783589967;0.05685"
+		  "1858322624127;-0.17648568403741219;-0.11600221306399058;0.020791207138507746;-0.10758599022656332;-0.0293326050872"
+		  "56942;0.074095482630561468;0.061540664387865686;0.081267675821951518;0.08917826871714403;-0.016167819298781333;-0."
+		  "11620939351916143;-0.089175286831148101;-0.063319478491864728;-0.086040333041269665;-0.016130061982707552;-0.03170"
+		  "3510628021847;0.045125952645390995;0.092054230005185853;-0.0014537043469173762;0.061135185173542904;-0.13788372493"
+		  "314024;0.010871748708078572;-0.012301367728244802;-0.033805699868087791;0.15326677657561216;-0.086062758032082257;"
+		  "-0.059503511623893321;0.023454047130479386;-0.10914618974108083;-0.14108758692262591;-0.13634830351926763;-0.03425"
+		  "601327087837;0.053699834446037313;0.026484881829286114;-0.011962469428909566;-0.073000224427695451;-0.053307162343"
+		  "412956;0.027994267811687689;-0.081915709454734212;-0.0089867864351183477;-0.12857979142854287;-0.1113924310369455;"
+		  "0.071462937397110987;0.055502181545617708;-0.062444544526303311;-0.026742408459592113;0.087876005835911458;0.07735"
+		  "0879139783904;-0.12150457248477056;-0.16448322332611978;0.021086440754288682;0.12220146247745109;0.108423243668677"
+		  "09;-0.12573389029203627;0.01718111649057481;-0.014695852662806356;0.11512617777562864;-0.11863278491559677;-0.1653"
+		  "9948350588479;0.11776275634209189;0.099278508373268889;0.059356517025632251;-0.11896483805337793;-0.14509999460648"
+		  "584;0.0042775889980067377;-0.039808818106971303;0.075638573095799133;-0.13659469485500561;0.077987269557553293;0.0"
+		  "68244018998113928;0.060026904264646644;-0.084841496277088604;-0.039982946404580728;-0.040430787363961281;-0.066982"
+		  "790167320783;-0.10737707354777878;-0.13195661629768793;0.12032812650571093;-0.11703042101796762;-0.032226153392727"
+		  "42;0.015488823743532488;-0.028618430982136726;-0.10156902734228972;0.094084384517464953;0.066362409238232362;-0.08"
+		  "8980110379214231;-0.042329307304853125;-0.039563373087551965;-0.13555220661680173;-0.14228181459503259;-0.07427523"
+		  "9579693578;0.033798263615520241;0.0030699670598103479;-0.13586280146913002;0.14059594883990281;-0.0150576982471642"
+		  "57;0.049054993152130008;0.067197313272620268;-0.045431639737590242;0.074235973241892877;0.07676216571770654;-0.017"
+		  "68401424351353;-0.070880561616424545;0.11106997164369838;-0.020317137944865549;0.095374747515071565;-0.04851548700"
+		  "6584687;-0.0069923123929921038;-0.031265266939700109;-0.101857250842161;0.032089652673737958;0.094433503533024807;"
+		  "0.099990898809659418;0.11474204055195737;-0.062619226121117755;0.066224128975979832;0.031766042346770988;-0.029663"
+		  "929009435375;0.049880590507946986;0.14339310446611889;-0.12859243455178873;-0.12437521216139137;0.1158587562423421"
+		  "4;0.0016864672637715318;-0.02134369763047218;-0.12317358965283416;0.14957086521153248;-0.12723590354809833;0.11806"
+		  "799325818046;0.020675895165892664;0.083897140597693654;0.081793762667734846;0.12188510199289419;-0.121628717685772"
+		  "38;-0.12458104179050968;-0.064730705530827368;0.021087880421139668;-0.072602966301054617;-0.037449174972774057;-0."
+		  "017042486488301908;-0.13617835496987291;-0.0072959998770560754;-0.15385295618427841;0.12827615777709397;0.12154580"
+		  "20870447;-0.13513061432279219;-0.11468399159107598;-0.008848856385469929;-0.09715831881049114;0.15253668493201564;"
+		  "0.057939513144487705;0.13427769569465078;-0.10543091895447261;-0.13567668684699583;-0.095975534925018674;0.0763290"
+		  "83754069132;0.062983874959776559;-0.14171827825082695;-0.080733721506566672;-0.0053604318224804021;-0.094755694547"
+		  "158112;-0.038920165875304828;-0.042996368020897985;0.059990373500125899;-0.1552734173216779;0.058944952929295719;0"
+		  ".14040390897537261;-0.031288773636571718;-0.12335865736955363;-0.02843482322089599;-0.045312447342327963;-0.108213"
+		  "45927465968;0.0037892075424439012;-0.15004226324339337;0.087371440453014135;-0.030335749738691183;-0.1590582448682"
+		  "3705;-0.12681168636362697;0.02677026530366728;0.083439638045329376;0.13671086226113288;0.08372730485089494;-0.1045"
+		  "6156287310506;-0.087637302358870586;-0.011631413397542277;0.036836038970511492;-0.15763073925112206;0.008005178188"
+		  "4056261;0.083966177391369384;-0.14975029651591454;-0.038862065656984301;0.098231676103334373;0.023819496599110673;"
+		  "-0.099539101771791968;0.015704043882959231;0.042182815024490519;0.062206673948301823;0.073338580067817988;-0.03624"
+		  "7689305178687;-0.036051212565522114;0.020267468457880241;0.006599877783381173;-0.0770747433978895;-0.1580530307895"
+		  "0919;-0.0076982020978762656;-0.084445671495709321;-0.049020245080331544;0.044847821666638817;0.04284094608864461;-"
+		  "0.022305706085692652;-0.13673750493386677;-0.084945701069940718;-0.010461986359617642;-0.11353865229478236;0.12094"
+		  "761297743803;0.13981898196316891;-0.16513734184516837;0.034105616781012094;-0.11124851754229487;-0.133470899012044"
+		  "59;0.01609855600980474;0.144678969968914;0.00018717096688824355;-0.072026621268893642;-0.063390038480105632;-0.140"
+		  "58038512093113;-0.10405435488646796;0.05056408113854638;-0.014620831313570629;-0.0083508854013985643;0.10592196769"
+		  "964082;-0.028478098304807062;-0.11126360594667671;0.11308468319697325;-0.046663927527429178;-0.018083886516440398]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "49"
+		  Ports			  [10, 1]
+		  Position		  [340, 320, 380, 365]
+		  Inputs		  "10"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Mux');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod1"
+		  SID			  "29"
+		  Ports			  [2, 1]
+		  Position		  [240, 40, 260, 80]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod10"
+		  SID			  "47"
+		  Ports			  [2, 1]
+		  Position		  [240, 580, 260, 620]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod2"
+		  SID			  "31"
+		  Ports			  [2, 1]
+		  Position		  [240, 100, 260, 140]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod3"
+		  SID			  "33"
+		  Ports			  [2, 1]
+		  Position		  [240, 160, 260, 200]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod4"
+		  SID			  "35"
+		  Ports			  [2, 1]
+		  Position		  [240, 220, 260, 260]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod5"
+		  SID			  "37"
+		  Ports			  [2, 1]
+		  Position		  [240, 280, 260, 320]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod6"
+		  SID			  "39"
+		  Ports			  [2, 1]
+		  Position		  [240, 340, 260, 380]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod7"
+		  SID			  "41"
+		  Ports			  [2, 1]
+		  Position		  [240, 400, 260, 440]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod8"
+		  SID			  "43"
+		  Ports			  [2, 1]
+		  Position		  [240, 460, 260, 500]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod9"
+		  SID			  "45"
+		  Ports			  [2, 1]
+		  Position		  [240, 520, 260, 560]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "iz{1,1}"
+		  SID			  "50"
+		  Position		  [420, 330, 440, 350]
+		  IconDisplay		  "Port number"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(1,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "pd{1,1}"
+		  SrcPort		  1
+		  Points		  [0, 0]
+		  Branch {
+		    DstBlock		    "dotprod1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod3"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod4"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod5"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod6"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod7"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod8"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod9"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod10"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "dotprod1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(2,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod2"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(3,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod3"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(4,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod4"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod4"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(5,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod5"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  5
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(6,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod6"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod6"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  6
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(7,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod7"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod7"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  7
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(8,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod8"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod8"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  8
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(9,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod9"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod9"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  9
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(10,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod10"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod10"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  10
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "iz{1,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "b{1}"
+	      SID		      "51"
+	      Position		      [180, 100, 220, 140]
+	      Value		      "[-1.4179802234186696;-1.09460213536941;0.81514063966848649;-0.49229912761746891;-0.12497830396302"
+	      "78;-0.2000150392778885;-0.46243985430235329;0.78624382911976132;1.1056778923148194;1.4166775026091198]"
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('b');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "netsum"
+	      SID		      "21"
+	      Ports		      [2, 1]
+	      Position		      [260, 70, 300, 110]
+	      Inputs		      "2"
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('+');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "tansig"
+	      SID		      "20"
+	      Ports		      [1, 1]
+	      Position		      [340, 70, 380, 110]
+	      LibraryVersion	      "1.76"
+	      SourceBlock	      "neural/Transfer Functions/tansig"
+	      SourceType	      "TANSIG"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      GeneratePreprocessorConditionals off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "a{1}"
+	      SID		      "19"
+	      Position		      [420, 70, 460, 110]
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "[0;0;0;0;0;0;0;0;0;0]"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Line {
+	      SrcBlock		      "p{1}"
+	      SrcPort		      1
+	      DstBlock		      "Delays 1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Delays 1"
+	      SrcPort		      1
+	      DstBlock		      "IW{1,1}"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IW{1,1}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "b{1}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "netsum"
+	      SrcPort		      1
+	      DstBlock		      "tansig"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "tansig"
+	      SrcPort		      1
+	      DstBlock		      "a{1}"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Layer 2"
+	  SID			  "52"
+	  Ports			  [1, 1]
+	  Position		  [190, 80, 250, 100]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1 "
+	  "1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e],"
+	  "c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Layer 2"
+	    Location		    [484, 94, 1020, 382]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "a{1} "
+	      SID		      "56"
+	      Position		      [20, 20, 60, 60]
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "10"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Delays 1"
+	      SID		      "57"
+	      Ports		      [1, 1]
+	      Position		      [100, 40, 140, 80]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('0');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"Delays 1"
+		Location		[484, 94, 1020, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "p{2}"
+		  SID			  "58"
+		  Position		  [60, 40, 80, 60]
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  NamePlacement		  "alternate"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "10"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "mux"
+		  SID			  "59"
+		  Ports			  [1, 1]
+		  Position		  [200, 60, 240, 80]
+		  Inputs		  "1"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Mux')"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "pd{2,1}"
+		  SID			  "60"
+		  Position		  [300, 60, 320, 80]
+		  IconDisplay		  "Port number"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Line {
+		  SrcBlock		  "p{2}"
+		  SrcPort		  1
+		  DstBlock		  "mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "mux"
+		  SrcPort		  1
+		  DstBlock		  "pd{2,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LW{2,1}"
+	      SID		      "61"
+	      Ports		      [1, 1]
+	      Position		      [180, 40, 220, 80]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('W');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"LW{2,1}"
+		Location		[484, 94, 1020, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "ad{2,1}"
+		  SID			  "62"
+		  Position		  [40, 60, 60, 80]
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "10"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{2,1}(1,:)'"
+		  SID			  "64"
+		  Position		  [140, 40, 180, 60]
+		  Value			  "[-0.76288811335687368;0.50617471556102966;0.37005733518158807;-0.48861712157183673;0.66423819040661702;"
+		  "-0.50450486085208934;0.11262136218074212;0.027266888619406508;-0.55533335904731695;-0.89079525712086782]"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('weights');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "65"
+		  Ports			  [1, 1]
+		  Position		  [340, 60, 380, 80]
+		  Inputs		  "1"
+		  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1"
+		  " 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e"
+		  "],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Mux');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod1"
+		  SID			  "63"
+		  Ports			  [2, 1]
+		  Position		  [240, 40, 260, 80]
+		  LibraryVersion	  "1.76"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  "DOTPROD"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  GeneratePreprocessorConditionals off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "lz{2,1}"
+		  SID			  "66"
+		  Position		  [420, 60, 440, 80]
+		  IconDisplay		  "Port number"
+		  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128"
+		  ");patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1"
+		  " 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		}
+		Line {
+		  SrcBlock		  "IW{2,1}(1,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ad{2,1}"
+		  SrcPort		  1
+		  DstBlock		  "dotprod1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "dotprod1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "lz{2,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "b{2}"
+	      SID		      "67"
+	      Position		      [180, 100, 220, 140]
+	      Value		      "0.63842561290135369"
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('b');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "netsum"
+	      SID		      "55"
+	      Ports		      [2, 1]
+	      Position		      [260, 70, 300, 110]
+	      Inputs		      "2"
+	      MaskDisplay	      "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patc"
+	      "h([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-"
+	      "e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('+');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "purelin"
+	      SID		      "54"
+	      Ports		      [1, 1]
+	      Position		      [340, 70, 380, 110]
+	      LibraryVersion	      "1.76"
+	      SourceBlock	      "neural/Transfer Functions/purelin"
+	      SourceType	      "PURELIN"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      GeneratePreprocessorConditionals off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "a{2}"
+	      SID		      "53"
+	      Position		      [420, 70, 460, 110]
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Line {
+	      SrcBlock		      "a{1} "
+	      SrcPort		      1
+	      DstBlock		      "Delays 1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Delays 1"
+	      SrcPort		      1
+	      DstBlock		      "LW{2,1}"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "LW{2,1}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "b{2}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "netsum"
+	      SrcPort		      1
+	      DstBlock		      "purelin"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "purelin"
+	      SrcPort		      1
+	      DstBlock		      "a{2}"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Process Input 1"
+	  SID			  "5"
+	  Ports			  [1, 1]
+	  Position		  [100, 40, 120, 60]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1 "
+	  "1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e],"
+	  "c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Process Input 1"
+	    Location		    [484, 94, 1020, 382]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x"
+	      SID		      "6"
+	      Position		      [20, 30, 60, 70]
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "250"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "mapminmax"
+	      SID		      "8"
+	      Ports		      [1, 1]
+	      Position		      [220, 30, 260, 70]
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.76"
+	      SourceBlock	      "neural/Processing Functions/mapminmax"
+	      SourceType	      "MAPMINMAX Preprocess"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      GeneratePreprocessorConditionals off
+	      xmin		      "[0.28314095380123011;0.0014657625514411762;1.1970013108086204e-053;0;3.1940747747761186e-136;1.073"
+	      "8088237835023e-008;0.057013843843753034;0.60598157151527954;0.97115785079355899;0.23505552379416098;0.001565940"
+	      "9791624098;1.7067224722511445e-053;0;8.0368942823302572e-061;4.5103371866006794e-009;0.04123819331054894;0.4794"
+	      "8358616284426;0.88558703437196162;0.21511995153872421;0.0010808819751517852;2.8250692334704583e-046;2.400930916"
+	      "5522609e-100;2.9707490367076884e-027;9.6683230662484232e-007;0.022724192555573834;0.3373513142068964;0.94606039"
+	      "580726742;0.83381807044158585;0.21660287739295905;0.00088853633165548963;1.7009716611458678e-033;6.678033625216"
+	      "8211e-038;5.0696194701202741e-008;0.0036192264717555211;0.041362148979468445;0.30981136666700104;0.598017864988"
+	      "96425;0.79746531298425982;0.22315144476727924;0.0021495963375243315;8.1846160068553859e-025;2.8239914066742661e"
+	      "-017;0.0031408384351054031;0.042889224861903372;0.16276386773841925;0.40408038951216474;0.29066305341648024;0.7"
+	      "6797757181136939;0.22877389647410262;0.0044456023366028895;5.600834653331497e-018;4.9394259822708177e-005;0.036"
+	      "840087959434539;0.17965949427207609;0.32363552339254342;0.45835299547326352;0.094130813464933724;0.753027985904"
+	      "93225;0.23743798347569076;0.0069561268877913604;6.4536346515668317e-010;0.008381002087497539;0.1570834990619501"
+	      "3;0.30441724262311659;0.36780124819343157;0.2185871738005285;0.016765306036066845;0.74823061163344928;0.2394772"
+	      "9804432752;0.010714512873083724;0.0010541317728196189;0.06157188394951027;0.28625369595068767;0.348446656709064"
+	      "77;0.28103818782833434;0.058728583468080235;0.0010252578856185749;0.74321854178214442;0.23689947649479201;0.018"
+	      "726205322830435;0.01403763154106394;0.22602305913201878;0.33322483120237623;0.33385806818767932;0.0891617203190"
+	      "27582;0.0074641188499559637;4.9961895725867701e-014;0.73482943796744249;0.25372073679541962;0.02967929083511871"
+	      "4;0.088110073989501325;0.30087532130095329;0.32980140896340393;0.16333410471453411;0.017268639637258193;2.12555"
+	      "84492753245e-005;3.393723053715393e-030;0.71603300903271727;0.28086288081641786;0.070765696337695222;0.25962114"
+	      "262595792;0.29530395857824981;0.29469508150713242;0.042775243878743575;0.0029717096345041856;2.9208044705741375"
+	      "e-016;6.5528308610418704e-056;0.69175545649373782;0.29982802434084543;0.20379814240139515;0.27454377432499888;0"
+	      ".27997276525054976;0.12616229517130753;0.0096590827511273004;1.3644328135045095e-006;2.142759325296534e-030;4.0"
+	      "40485592604963e-142;0.66009817247140257;0.32061678791653081;0.2682547532557979;0.27174385900521508;0.2064176601"
+	      "3384005;0.037985710799232193;0.0013807033350987767;1.3012635462117102e-015;5.4320946234375216e-057;1.7591464959"
+	      "013825e-240;0.6172769879756197;0.34847790967374298;0.26501955306395414;0.24801128848847065;0.060440114839899084"
+	      ";0.0055485797080829314;1.7011821839009803e-005;1.267314796215441e-026;4.0942538416128276e-118;0;0.5529858887517"
+	      "6991;0.39441141595760654;0.24783748213069953;0.11231138884518392;0.010163982524210212;0.00014263917490065886;8."
+	      "4779138948903329e-012;4.2832420373506433e-043;1.3914284431877022e-183;0;0.44408275342157744;0.45739136644383088"
+	      ";0.21373527300401277;0.030371879562093255;0.00095751904960731358;1.5885247614363501e-006;6.148043824133868e-020"
+	      ";7.3970467026419826e-081;1.4934597127927122e-257;0;0.26243962974132995;0.48079214069904203;0.26231548541471439;"
+	      "0.036602136267184941;0.00060628096867560799;1.2785305836116123e-008;1.1751484874139984e-028;1.1824443720758194e"
+	      "-113;1.5841675491774084e-254;0;0.090633848716506302;0.34771902491284706;0.38815621070205064;0.07405919728672136"
+	      "2;0.003659510261993704;1.2345059166718358e-008;8.313897839456496e-019;4.7510923797345716e-037;4.530298640955872"
+	      "3e-159;0;0.010447510961658907;0.12022109545632396;0.43641885135063363;0.17835412356961261;0.023094869323530314;"
+	      "0.0036055987469813863;1.6562419958457672e-006;2.3336559312165858e-018;1.2249443391194443e-049;7.877706135852590"
+	      "6e-305;2.9236537014494795e-005;0.012406243347218964;0.14829252040733829;0.46412790611608706;0.26210222673708705"
+	      ";0.059108695718071126;0.0092604964889333903;4.7849651553379611e-005;5.2112376819473429e-025;1.1272595516941735e"
+	      "-064;8.2853763655463884e-019;0.00010651862608477079;0.016366430144765506;0.17863520568864916;0.451870043206617;"
+	      "0.25670137694795309;0.10990081301522345;0.01559541007457005;0.00047468213165182028;1.4973310907033512e-033;6.37"
+	      "95974847577782e-055;1.1353855329353487e-020;0.00047161711679200122;0.024225650275889441;0.22235619632494449;0.4"
+	      "3905675499425129;0.22799579058360775;0.12796810074951387;0.021295888539273094;1.6597001464015582e-005;2.0675120"
+	      "67626423e-298;1.3004607049800973e-060;4.9963115027733337e-024;0.0013038448731561381;0.033703738256465832;0.2546"
+	      "7765828209943;0.43715068032411186;0.26767404927161031;0.10591882281645799;0.015237552984991735;0;0;5.4467678715"
+	      "953803e-068;7.5483039389773317e-028;0.00080448254831446786;0.025737916577932073;0.21422418752529479;0.454100501"
+	      "65944776;0.32965770818636247;0.22201982934176157;0;0;0;8.419424341369096e-075;1.2310434433435185e-031;0.0001129"
+	      "5293570210301;0.022716360379767313;0.19116052664733105;0.61339777638760273;0.73790318627521401]"
+	      xmax		      "[0.54696499822519751;0.018097615199448878;1.1211625874404843e-008;5.6770535681185055e-031;3.002023"
+	      "2501492485e-023;0.0021391516298108959;0.14989077001407924;1;1;0.51285806504859077;0.012524359149825833;3.756529"
+	      "4910936581e-008;8.8658980841575836e-016;8.8232922508452755e-016;0.001431874497486966;0.11011541950728011;0.7453"
+	      "4542491818523;1;0.48923990729976458;0.010269229460599905;0.00012832810780790373;2.2351799345579169e-007;1.17616"
+	      "96155131968e-007;0.0079013681222223249;0.17244731798578716;0.71244774902097929;1;1;0.48140245816606869;0.047806"
+	      "463657213097;0.0081972329787444211;0.00086126759741684059;0.00067631735814793108;0.054522031032458694;0.4432796"
+	      "5809411135;0.92459203478062935;1;1;0.49019971138734014;0.17395100080588385;0.065005975793286361;0.0141642271428"
+	      "6911;0.012751094148073646;0.20944713469156914;0.78827123663686649;0.87081878078898467;0.95513016761074909;1;0.5"
+	      "1122174001432474;0.29403679313756742;0.18568212819115559;0.075803332242896079;0.078401394267904906;0.5013520414"
+	      "4083989;0.9664167423402531;0.58456418046873104;0.91739553578710931;1;0.53971323573207386;0.29149662177536673;0."
+	      "27410880384568065;0.1837507683046567;0.29524394301616924;0.84674198186133631;0.84210071990954583;0.424976638208"
+	      "74571;0.88784360430489151;1;0.57121324179208999;0.22637434602283085;0.28034774373112925;0.26868308271974917;0.5"
+	      "9953438584907626;0.97047208655755235;0.50805015525697472;0.34234261762679447;0.87771026590275036;1;0.6007487409"
+	      "4814346;0.1916976426070201;0.25414704427969675;0.44993057603357373;0.88913380145795928;0.78092906980325061;0.25"
+	      "708018546662409;0.30771110138826629;0.87022341791434699;1;0.617306656443951;0.19934536258060637;0.3230232905928"
+	      "398;0.68829336578133204;0.95490583236234927;0.43227229211606583;0.22921735464334314;0.29281982938187762;0.85988"
+	      "787364640351;1;0.60630227597781849;0.30945921967509815;0.57138434730137322;0.91429431990444288;0.71818200551782"
+	      "518;0.26394601892423619;0.21426386186227164;0.28369191206670286;0.84562505813256228;1;0.56823312027864892;0.448"
+	      "63329749984288;0.71906026058361971;0.92350828111072714;0.3747432970237301;0.22909478028122401;0.199356162040167"
+	      "54;0.27379410767962531;0.8266315756856335;1;0.51953034271202558;0.60295589781616798;0.91300857377332856;0.66280"
+	      "494491038633;0.22143189882557401;0.2026398062267977;0.1962579230845605;0.31999660638663485;0.80287348923773216;"
+	      "1;0.59296613606001092;0.68686554535086453;0.87309352639261761;0.38035071945566451;0.19048604266347183;0.1795743"
+	      "8027237879;0.19276008856692992;0.37383438414826858;0.77561353621643292;1;0.66370203949103279;0.8107157848766313"
+	      "2;0.63855594243678315;0.18363161767842476;0.16886869838772173;0.16759119141941323;0.22916253663769068;0.4102200"
+	      "6167831676;0.75522032032662323;1;0.73729449658897717;0.7538058199151334;0.3771078802273462;0.15562663623401607;"
+	      "0.15415334753614637;0.16006433070656098;0.29132092095713402;0.43491866548201041;0.75875179823799987;1;0.7718067"
+	      "1800562406;0.5668273239134819;0.17155060451941492;0.1329185837986466;0.14311963764645053;0.15322599053717373;0."
+	      "37231070306965769;0.45173063997351182;0.75898683140048251;0.83129415315023303;0.78769388341964497;0.69038984228"
+	      "38507;0.44895919763123077;0.1310799125816258;0.13227596328915173;0.20184463272049286;0.4103151322505435;0.46903"
+	      "573008910326;0.75524943678441836;0.54304909791427902;0.78030741474702103;0.79441543065435416;0.7140055991987914"
+	      "7;0.41985876969231978;0.12847278188546379;0.27306427097241653;0.42596678627353968;0.47506640461712185;0.7478459"
+	      "0697831133;0.15994733323285074;0.51367456324893335;0.76588478994661346;0.79540230108298482;0.74664876613427333;"
+	      "0.39156046661972882;0.34114884070619123;0.45291405207552665;0.48456629233600629;0.73631043009063002;0.000228939"
+	      "29550700675;0.11306261647576715;0.42301243689598156;0.73475156560803945;0.78957771166163848;0.76512552649234056"
+	      ";0.38458568107385055;0.47257093304093056;0.47483300931247441;0.71685442986576109;1.3818041240619991e-008;0.0007"
+	      "4138417223213555;0.065984006680153626;0.31244947587072502;0.6524693757289467;0.77720367695162929;0.771285798045"
+	      "33637;0.44179189964173576;0.44343980310499309;0.69398985883150044;3.5366809590195894e-016;2.9196230571757389e-0"
+	      "07;0.0017102777612640885;0.042806284890781157;0.29827535894530888;0.62093055872844227;0.75327757683500829;0.768"
+	      "61696750573849;0.45355306593982536;0.66731222814801794;1.1796367628539303e-029;1.5442261027057915e-014;2.726487"
+	      "4370711759e-006;0.0049921795770704238;0.084224789737910408;0.366063432619056;0.6017755303536384;0.7045485089668"
+	      "1187;0.76019062748331978;0.67029630140114149;2.75542638665317e-057;9.4444613189239671e-027;3.1047290336260394e-"
+	      "013;1.3625351506760738e-005;0.011779317353591674;0.10214273735267597;0.31184454603235756;0.52772631749462129;0."
+	      "68208234683560132;0.9553727247932432]"
+	      ymin		      "-1"
+	      ymax		      "1"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "removeconstantrows"
+	      SID		      "7"
+	      Ports		      [1, 1]
+	      Position		      [120, 30, 160, 70]
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.76"
+	      SourceBlock	      "neural/Processing Functions/removeconstantrows"
+	      SourceType	      "REMOVECONSTANTROWS Process"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      GeneratePreprocessorConditionals off
+	      inputSize		      "250"
+	      keep		      "[2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 "
+	      "39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 "
+	      "76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109"
+	      " 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 13"
+	      "7 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 1"
+	      "65 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 "
+	      "193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220"
+	      " 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 24"
+	      "8 249 250]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "p"
+	      SID		      "9"
+	      Position		      [320, 30, 360, 70]
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "247"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Line {
+	      SrcBlock		      "x"
+	      SrcPort		      1
+	      DstBlock		      "removeconstantrows"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "removeconstantrows"
+	      SrcPort		      1
+	      DstBlock		      "mapminmax"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "mapminmax"
+	      SrcPort		      1
+	      DstBlock		      "p"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Process Output 1"
+	  SID			  "11"
+	  Ports			  [1, 1]
+	  Position		  [320, 120, 340, 140]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDisplay		  "e = 0.06;c1 = [120 150 230]/255;c2 = ([120 150 230]+0)/383;c3 = ([120 150 230]+128)/383;patch([0 1 "
+	  "1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1-e 1-e 0+e],"
+	  "c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Process Output 1"
+	    Location		    [484, 94, 1020, 382]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "a"
+	      SID		      "12"
+	      Position		      [20, 30, 60, 70]
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "1"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "mapminmax_reverse"
+	      SID		      "13"
+	      Ports		      [1, 1]
+	      Position		      [120, 30, 160, 70]
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.76"
+	      SourceBlock	      "neural/Processing Functions/mapminmax_reverse"
+	      SourceType	      "MAPMINMAX Reverse Process"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      GeneratePreprocessorConditionals off
+	      xmin		      "-43.928813744888274"
+	      xmax		      "42.353350358455415"
+	      ymin		      "-1"
+	      ymax		      "1"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "removeconstantrows_reverse"
+	      SID		      "14"
+	      Ports		      [1, 1]
+	      Position		      [220, 30, 260, 70]
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.76"
+	      SourceBlock	      "neural/Processing Functions/removeconstantrows_reverse"
+	      SourceType	      "REMOVECONSTANTROWS Reverse Process"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      GeneratePreprocessorConditionals off
+	      inputSize		      "1"
+	      constants		      "zeros(0,1)"
+	      rearrange		      "1"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y"
+	      SID		      "15"
+	      Position		      [320, 30, 360, 70]
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "1"
+	      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(2"
+	      "56+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+"
+	      "e],[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Line {
+	      SrcBlock		      "a"
+	      SrcPort		      1
+	      DstBlock		      "mapminmax_reverse"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "mapminmax_reverse"
+	      SrcPort		      1
+	      DstBlock		      "removeconstantrows_reverse"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "removeconstantrows_reverse"
+	      SrcPort		      1
+	      DstBlock		      "y"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "a{1}"
+	  SID			  "17"
+	  Position		  [380, 40, 400, 60]
+	  GotoTag		  "feedback1"
+	  TagVisibility		  "local"
+	  MaskDisplay		  "plot(cos(0:.1:2*pi),sin(0:.1:2*pi))"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Output"
+	  SID			  "10"
+	  Position		  [380, 120, 400, 140]
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	  MaskDisplay		  "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(256+128)"
+	  ";patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e],[0 1 1 1"
+	  "-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	}
+	Line {
+	  SrcBlock		  "Input"
+	  SrcPort		  1
+	  DstBlock		  "Process Input 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Process Output 1"
+	  SrcPort		  1
+	  DstBlock		  "Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Process Input 1"
+	  SrcPort		  1
+	  DstBlock		  "Layer 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Layer 1"
+	  SrcPort		  1
+	  DstBlock		  "a{1}"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " a{1} "
+	  SrcPort		  1
+	  DstBlock		  "Layer 2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Layer 2"
+	  SrcPort		  1
+	  DstBlock		  "Process Output 1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "x1"
+      SID		      "1"
+      Position		      [30, 65, 80, 115]
+      Value		      "[0.14;0.88;0.095;0.35;0.59;0.59;0.67;0.65;0.43;0.14;0.75;0.24;0.65;0.86;0.084;0.97;0.031;0.84;0.84"
+      ";0.05;0.55;0.94;0.32;0.81;0.6;0.79;0.8;0.05;0.28;0.65;0.49;0.97;0.75;0.57;0.3;0.26;0.89;0.45;0.82;0.098;0.86;0.0"
+      "28;0.9;0.9;0.52;0.12;0.18;0.71;0.83;0.035;0.76;0.96;0.34;0.64;0.34;0.22;0.79;0.72;0.28;0.58;0.42;0.092;0.024;0.4"
+      "9;0.28;0.34;0.29;0.17;0.4;0.7;0.2;0.67;0.44;0.43;0.18;0.19;0.62;0.27;0.56;0.94;0.71;0.68;0.96;0.78;0.61;0.95;0.0"
+      "6;0.27;0.99;0.77;0.48;0.68;0.42;0.38;0.21;0.38;0.03;0.47;0.33;0.98;0.56;0.85;0.41;0.46;0.83;0.99;0.52;0.93;0.74;"
+      "0.57;0.97;0.82;0.96;0.65;0.38;0.48;0.91;0.015;0.16;0.47;0.54;0.06;0.66;0.89;0.11;0.44;0.28;0.99;0.61;0.25;0.13;0"
+      ".55;0.83;0.84;0.83;0.2;0.54;0.87;0.12;0.86;0.9;0.22;0.077;0.47;0.84;0.47;0.41;0.5;0.13;0.13;0.87;0.6;0.27;0.86;0"
+      ".058;0.46;0.72;0.34;0.4;0.53;0.89;0.78;0.069;0.28;0.38;0.86;0.42;0.24;0.6;0.48;0.9;0.93;0.82;0.71;0.74;0.9;0.065"
+      ";0.34;0.0043;0.83;0.51;0.37;0.23;0.53;0.29;0.068;0.085;0.068;0.41;0.12;0.44;0.9;0.35;0.12;0.57;0.88;0.35;0.042;0"
+      ".14;0.077;0.74;0.46;0.67;0.7;0.57;0.63;0.88;0.66;0.88;0.47;0.14;0.068;0.71;0.31;0.67;0.65;0.53;0.72;0.5;0.49;0.5"
+      ";0.94;0.39;0.12;0.24;0.68;0.84;0.97;0.22;0.76;0.58;0.4;0.51;0.5;0.65;0.74;0.3;0.09;0.83;0.39;0.78;0.18;0.11;0.91"
+      ";0.88;1;0.86;0.037;0.54;1]"
+      SampleTime	      "1"
+      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(25"
+      "6+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e]"
+      ",[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);disp('Constant');"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "y1"
+      SID		      "2"
+      Ports		      [1]
+      Position		      [370, 65, 420, 115]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+      MaskDisplay	      "e = 0.06;c1 = [120 230 180]/255;c2 = ([120 230 180]+0)/(256+128);c3 = ([120 230 180]+128)/(25"
+      "6+128);patch([0 1 1 0],[0 0 1 1],c1);patch([0 1 1 1-e 1-e 0+e],[0 0 1 1-e 0+e 0+e],c2);patch([0 0 1 1-e 0+e 0+e]"
+      ",[0 1 1 1-e 1-e 0+e],c3);plot([0 1 1 0 0],[0 0 1 1 0]);plot([0.15 0.85 0.85 0.15 0.15],[0.5 0.5 0.85 0.85 0.5]);"
+      MaskIconFrame	      off
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Line {
+      SrcBlock		      "x1"
+      SrcPort		      1
+      DstBlock		      "Function Fitting Neural Network"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Function Fitting Neural Network"
+      SrcPort		      1
+      DstBlock		      "y1"
+      DstPort		      1
+    }
+  }
+}

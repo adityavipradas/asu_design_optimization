@@ -1,0 +1,27 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Design optimization process flowchart\relax }}{7}
+\contentsline {figure}{\numberline {2}{\ignorespaces ANSYS Optimization Flowchart\relax }}{10}
+\contentsline {figure}{\numberline {3}{\ignorespaces Disc Brake CAD Model\relax }}{11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Disc Brake Mesh Model\relax }}{11}
+\contentsline {figure}{\numberline {5}{\ignorespaces Static structural boundary conditions\relax }}{13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Stress plot for initial conditions on the design variables\relax }}{13}
+\contentsline {figure}{\numberline {7}{\ignorespaces Mode shape plot for initial conditions on the design variables\relax }}{14}
+\contentsline {figure}{\numberline {8}{\ignorespaces Transient thermal boundary conditions\relax }}{15}
+\contentsline {figure}{\numberline {9}{\ignorespaces Temperature plot for initial conditions on the design variables\relax }}{15}
+\contentsline {figure}{\numberline {10}{\ignorespaces Goodness of fit plot for structural analysis\relax }}{16}
+\contentsline {figure}{\numberline {11}{\ignorespaces Goodness of fit plot for modal analysis\relax }}{17}
+\contentsline {figure}{\numberline {12}{\ignorespaces Goodness of fit plot for thermal analysis\relax }}{17}
+\contentsline {figure}{\numberline {13}{\ignorespaces Correlation of Pareto curves from IPM (fmincon) and MOGA for structural analysis\relax }}{18}
+\contentsline {figure}{\numberline {14}{\ignorespaces Optimal dimensions candidate points for structural analysis\relax }}{19}
+\contentsline {figure}{\numberline {15}{\ignorespaces Correlation of Pareto curves from IPM (fmincon) and MOGA for modal analysis\relax }}{19}
+\contentsline {figure}{\numberline {16}{\ignorespaces Optimal dimensions candidate points for modal analysis\relax }}{20}
+\contentsline {figure}{\numberline {17}{\ignorespaces Correlation of Pareto curves from IPM (fmincon) and MOGA for thermal analysis\relax }}{20}
+\contentsline {figure}{\numberline {18}{\ignorespaces Optimal dimensions candidate points for thermal analysis\relax }}{21}
+\contentsline {figure}{\numberline {19}{\ignorespaces Pareto curve for volume, frequency and temperature\relax }}{24}
+\contentsline {figure}{\numberline {20}{\ignorespaces Optimal dimensions candidate points for combined modal and thermal analysis\relax }}{24}
+\contentsline {figure}{\numberline {21}{\ignorespaces Pareto curve for volume, frequency and stress\relax }}{26}
+\contentsline {figure}{\numberline {22}{\ignorespaces Optimal dimensions candidate points for combined modal and structural analysis\relax }}{26}
+\contentsline {figure}{\numberline {23}{\ignorespaces System optimization procedure\relax }}{27}
+\contentsline {figure}{\numberline {24}{\ignorespaces Optimal dimensions candidate points for combined structural, modal and thermal analysis\relax }}{28}
+\contentsline {figure}{\numberline {25}{\ignorespaces Initial and final brake disc geometries\relax }}{29}
+\contentsline {figure}{\numberline {26}{\ignorespaces LHS DOE points\relax }}{31}
+\contentsline {figure}{\numberline {27}{\ignorespaces LHS DOE points (continued)\relax }}{31}

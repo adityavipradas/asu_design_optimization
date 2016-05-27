@@ -1,0 +1,147 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>report</title><meta name="generator" content="MATLAB 7.12"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-02-09"><meta name="DC.source" content="report.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%% Generate Report  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%%%%%%%%%%%%%% By Max Yi Ren and Emrah Bayrak %%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+<span class="keyword">function</span> report(solution,f)
+    figure; <span class="comment">% Open an empty figure window</span>
+    hold <span class="string">on</span>; <span class="comment">% Hold on to the current figure</span>
+
+    <span class="comment">% Draw a 2D contour plot for the objective function</span>
+    <span class="comment">% You can edit drawing parameters within the file: drawContour.m</span>
+    drawContour(f);
+
+    <span class="comment">% Plot the search path</span>
+    x = solution.x;
+    iter = size(x,2);
+    plot(x(1,1),x(2,1),<span class="string">'.y'</span>,<span class="string">'markerSize'</span>,20);
+    str1 = [num2str(x(1,1)),<span class="string">','</span>,num2str(x(2,1))];
+    text(x(1,1),x(2,1),str1);
+    <span class="keyword">for</span> i = 2:iter
+        <span class="comment">% Draw lines. Type "help line" to see more drawing options.</span>
+        line([x(1,i-1),x(1,i)],[x(2,i-1),x(2,i)],<span class="string">'Color'</span>,<span class="string">'y'</span>);
+        plot(x(1,i),x(2,i),<span class="string">'.y'</span>,<span class="string">'markerSize'</span>,20);
+    <span class="keyword">end</span>
+    title(<span class="string">'Contour plot'</span>);
+    xlabel(<span class="string">'x2'</span>);
+    ylabel(<span class="string">'x3'</span>);
+    str2 = [num2str(x(1,i)),<span class="string">','</span>,num2str(x(2,i))];
+    text(x(1,i),x(2,i),str2);
+    <span class="comment">% Plot the convergence</span>
+    F = zeros(iter,1);
+    <span class="keyword">for</span> i = 1:iter
+        F(i) = feval(f,x(:,i));
+    <span class="keyword">end</span>
+    figure;
+    plot(1:iter, log(F-F(end)+eps),<span class="string">'k'</span>,<span class="string">'lineWidth'</span>,3);
+    title(<span class="string">'Convergence Plot'</span>);
+    xlabel(<span class="string">'Iteration'</span>);
+    ylabel(<span class="string">'Log Convergence'</span>);
+</pre><pre class="codeoutput">Input argument "f" is undefined.
+
+Error in ==&gt; report at 10
+    drawContour(f);
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.12<br></p></div><!--
+##### SOURCE BEGIN #####
+%%%%%%%%%%%%%% Generate Report  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% By Max Yi Ren and Emrah Bayrak %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+function report(solution,f)
+    figure; % Open an empty figure window
+    hold on; % Hold on to the current figure
+    
+    % Draw a 2D contour plot for the objective function
+    % You can edit drawing parameters within the file: drawContour.m
+    drawContour(f);
+    
+    % Plot the search path
+    x = solution.x;
+    iter = size(x,2);
+    plot(x(1,1),x(2,1),'.y','markerSize',20);
+    str1 = [num2str(x(1,1)),',',num2str(x(2,1))];
+    text(x(1,1),x(2,1),str1);
+    for i = 2:iter
+        % Draw lines. Type "help line" to see more drawing options.
+        line([x(1,i-1),x(1,i)],[x(2,i-1),x(2,i)],'Color','y');
+        plot(x(1,i),x(2,i),'.y','markerSize',20);
+    end
+    title('Contour plot');
+    xlabel('x2');
+    ylabel('x3');
+    str2 = [num2str(x(1,i)),',',num2str(x(2,i))];
+    text(x(1,i),x(2,i),str2);
+    % Plot the convergence
+    F = zeros(iter,1);
+    for i = 1:iter
+        F(i) = feval(f,x(:,i));
+    end
+    figure;
+    plot(1:iter, log(F-F(end)+eps),'k','lineWidth',3);
+    title('Convergence Plot');
+    xlabel('Iteration');
+    ylabel('Log Convergence');
+##### SOURCE END #####
+--></body></html>
